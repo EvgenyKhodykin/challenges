@@ -1,0 +1,60 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.Section {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Title {
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.4em;
+    color: var(--text-color-primary);
+    margin-bottom: $grid-gutter * 0.444;
+}
+
+.Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: $grid-gutter * 0.3611;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: var(--text-color-primary);
+
+    .Value {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .Amount {
+        font-weight: 400;
+    }
+
+    .IconLabel {
+        color: var(--text-color-primary);
+        margin-right: 10px;
+    }
+
+    .IconCheck {
+        color: var(--secondary-color-main);
+        margin-left: 10px;
+    }
+
+    .IconCross {
+        color: var(--error-color-main);
+        margin-left: 10px;
+    }
+}

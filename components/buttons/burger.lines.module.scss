@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.Button {
+    padding: 5px;
+}
+
+.Icon {
+    font-size: 1.5rem;
+    path {
+        stroke: var(--text-color-primary);
+    }
+}

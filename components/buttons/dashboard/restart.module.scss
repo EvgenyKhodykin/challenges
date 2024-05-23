@@ -1,0 +1,16 @@
+@import '../../../styles/variables';
+
+.Root {
+    min-width: initial;
+    padding-left: $grid-gutter * 0.86;
+    padding-right: $grid-gutter * 0.86;
+}
+
+.Icon {
+    margin-right: 10px;
+    color: var(--neutral-color-0);
+}
+
+.Message {
+    text-transform: uppercase;
+}

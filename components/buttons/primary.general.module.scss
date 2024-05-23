@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Button {
+    @include button-general();
+    @include button-breakpoint-relevant(xs);
+    background-color: var(--primary-color-main);
+    color: var(--neutral-color-20);
+    &:hover {
+        background-color: var(--secondary-color-main);
+    }
+    &:disabled {
+        color: var(--neutral-color-0);
+        background-color: var(--neutral-color-70);
+        &:hover {
+            background-color: var(--neutral-color-70);
+            cursor: not-allowed;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Button {
+        @include button-breakpoint-relevant(md);
+    }
+}

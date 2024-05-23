@@ -1,0 +1,71 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    overflow: visible !important;
+}
+
+.NewChallengeContainer {
+    height: 72px;
+}
+
+.Skeleton {
+    width: 100%;
+    height: 380px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    .Header {
+        flex-grow: 0;
+        flex-shrink: 0;
+        padding: 17px 15px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Body {
+        flex-grow: 1;
+        flex-shrink: 1;
+        position: relative;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .Footer {
+        height: 115px;
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+.Snapped {
+    position: fixed;
+    top: 16px;
+    left: 20px;
+    right: 20px;
+    z-index: 100;
+    border-color: transparent;
+}
+
+@include media-breakpoint-up(md) {
+    .NewChallengeContainer {
+        height: initial;
+    }
+
+    .Snapped {
+        position: initial;
+        top: initial;
+        left: initial;
+        right: initial;
+        z-index: initial;
+    }
+}

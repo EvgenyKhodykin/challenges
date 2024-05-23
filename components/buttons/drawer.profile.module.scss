@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Button {
+    @include header-profile-sizes(xs);
+    @include header-profile-text();
+    background-color: var(--neutral-color-100) !important;
+    opacity: 1;
+    transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    &:hover {
+        opacity: 0.95;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Button {
+        @include header-profile-sizes(md);
+    }
+}

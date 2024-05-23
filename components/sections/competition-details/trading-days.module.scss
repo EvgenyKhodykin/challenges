@@ -1,0 +1,90 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    padding: $grid-gutter * 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.Title {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .Icon {
+        display: inline-block;
+        line-height: 0;
+        color: var(--text-color-primary);
+        background-color: transparent;
+        margin-right: 10px;
+    }
+
+    .Text {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        text-align: left;
+        color: var(--text-color-primary);
+    }
+}
+
+.Target,
+.ToGoal {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.4em;
+    color: var(--text-color-secondary);
+    text-align: center;
+
+    span {
+        font-size: 1.375rem;
+        font-weight: 600;
+        color: var(--text-color-primary);
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        align-items: stretch;
+    }
+
+    .Title {
+        .Text {
+            font-size: 0.9375rem;
+        }
+    }
+
+    .Target,
+    .ToGoal {
+        font-size: 0.8125rem;
+
+        span {
+            font-size: 1.0625rem;
+        }
+    }
+}

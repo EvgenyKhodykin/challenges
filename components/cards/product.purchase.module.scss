@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Product {
+    display: flex;
+    align-items: center;
+
+    .Currency {
+        margin-right: 10px;
+    }
+}

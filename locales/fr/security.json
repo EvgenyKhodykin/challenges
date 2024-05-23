@@ -1,0 +1,49 @@
+{
+    "title": "Sécurité du Compte",
+    "keywords": "sécurité du compte",
+    "description": "Sécurité du Compte",
+
+    "changeEmail": {
+        "form": {
+            "title": "Changer l'Email",
+            "error": "Échec de la mise à jour de votre email",
+            "success": "Votre email a été mis à jour avec succès",
+            "email": {
+                "label": "Adresse e-mail",
+                "required": "L'e-mail est requis",
+                "invalid": "Email invalide"
+            },
+            "password": {
+                "label": "Mot de passe",
+                "helper": "Pour des raisons de sécurité, entrez votre mot de passe actuel",
+                "required": "Mot de passe requis"
+            }
+        }
+    },
+    "changePassword": {
+        "form": {
+            "title": "Changer le mot de passe",
+            "error": "Échec de la mise à jour de votre mot de passe",
+            "success": "Votre mot de passe a été mis à jour avec succès",
+            "oldPassword": {
+                "label": "Ancien mot de passe",
+                "helper": "Pour des raisons de sécurité, entrez votre mot de passe actuel",
+                "required": "Mot de passe requis"
+            },
+            "newPassword": {
+                "label": "Nouveau mot de passe",
+                "required": "Mot de passe requis"
+            },
+            "forgotPassword": "Mot de passe oublié?"
+        }
+    },
+
+    "passwordRules": {
+        "header": "Votre mot de passe doit:",
+        "lowerUpperCase": "inclure des caractères minuscules et majuscules.",
+        "includeOneDigit": "inclure au moins un chiffre ou un symbole.",
+        "charactersLong": "comporter au moins 8 caractères."
+    },
+
+    "saveButton": "SAUVEGARDER"
+}

@@ -1,0 +1,125 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    position: relative;
+
+    &.WithLabels {
+        padding-bottom: $grid-gutter * 0.5;
+    }
+}
+
+.Progress {
+    height: 2px;
+    background-color: var(--success-color-main);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    border-radius: 2px;
+
+    &.Dark {
+        background-color: var(--text-color-primary);
+    }
+}
+
+.Track {
+    height: 2px;
+    background-color: var(--neutral-color-50);
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    border-radius: 2px;
+    position: relative;
+    margin-top: $grid-gutter * 0.5;
+    margin-bottom: $grid-gutter * 0.5;
+
+    &.NoTrack {
+        width: 12px;
+        margin: 0 auto;
+    }
+}
+
+.Dot {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 6px;
+    visibility: hidden;
+    box-shadow:
+        0px 6px 8px -6px var(--text-color-primary),
+        0px 8px 12px -6px var(--text-color-primary),
+        inset 0px 0px 0px 2px white,
+        inset 0px 0px 0px 4px var(--text-color-primary);
+
+    &.Visible {
+        visibility: visible;
+    }
+
+    &.Current {
+        visibility: visible;
+        background-color: var(--success-color-main);
+        box-shadow:
+            0px 0px 0px 10px var(--success-color-background),
+            inset 0px 0px 0px 3px white;
+    }
+
+    &.Done {
+        box-shadow:
+            0px 6px 8px -6px var(--text-color-primary),
+            0px 8px 12px -6px var(--text-color-primary),
+            inset 0px 0px 0px 2px white,
+            inset 0px 0px 0px 4px var(--success-color-main);
+
+        &.Dark {
+            background-color: var(--text-color-primary);
+            box-shadow:
+                0px 6px 8px -6px var(--text-color-primary),
+                0px 8px 12px -6px var(--text-color-primary),
+                inset 0px 0px 0px 3px white;
+        }
+    }
+
+    span {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.4em;
+        text-align: center;
+        color: var(--text-color-tertiary);
+        white-space: nowrap;
+        position: absolute;
+        top: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &:not(.Single):first-of-type {
+        span {
+            left: 0;
+            transform: none;
+        }
+    }
+
+    &:not(.Single):last-of-type {
+        span {
+            left: initial;
+            transform: none;
+            right: 0;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Dot {
+        span {
+            font-size: 0.8125rem;
+        }
+    }
+}

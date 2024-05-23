@@ -1,0 +1,107 @@
+{
+    "title": "Détails du Défi",
+    "keywords": "détails du défi",
+    "description": "Détails du Défi",
+
+    "credentials": {
+        "title": "Informations d'identification",
+        "login": "Se connecter",
+        "passwords": "Mots de passe",
+        "server": "Serveur",
+        "platform": "Plate-forme",
+        "message": "Vous recevrez un e-mail avec votre mot de passe et votre mot de passe investisseur",
+        "resetPassword": "RÉINITIALISER"
+    },
+    "timeline": {
+        "step": "Étape {{count}}",
+        "endsIn": "Fini dans:",
+        "stage": "Scène {{count}}",
+        "start": "Commencer",
+        "end": "Fin"
+    },
+    "realizedProfit": {
+        "title": "Bénéfice Réalisé"
+    },
+    "tradingDays": {
+        "title": "Jours De Bourse",
+        "noTradesYet": "Pas encore d'échanges"
+    },
+    "liveEquity": {
+        "title": "Actions En Direct",
+        "filterLabel": "RÉSUMÉ",
+        "unrealizedProfit": "Bénéfice Non Réalisé",
+        "profitToGoal": "Bénéfice Quotidien Moyen Par Rapport",
+        "commitedFunds": "Fonds Engagés",
+        "dailyLoss": "Quotidienne Restante",
+        "overallLoss": "Globale Autorisée",
+        "accountEquity": "Avoir du Compte",
+        "noActiveTrades": "Aucune transaction active"
+    },
+    "tradingHistory": {
+        "title": "Historique des échanges",
+        "filters": {
+            "TRADES": "MÉTIERS",
+            "TIME": "TEMPS",
+            "SUMMARY": "RÉSUMÉ",
+            "JOURNAL": "JOURNAL"
+        },
+        "trades": {
+            "header": "Profit",
+            "yaxisTitle": "Profit",
+            "xaxisTitle": "Échanges"
+        },
+        "time": {
+            "header": "Équilibre",
+            "yaxisTitle": "Équilibre",
+            "xaxisTitle": "Jours Négociés"
+        },
+        "summary": {
+            "balance": "Équilibre",
+            "equity": "Équité",
+            "averageTradeDuration": "Durée moyenne des échanges",
+            "winRate": "Taux de Réussite",
+            "averageProfit": "Bénéfice Moyen",
+            "averageLoss": "Perte Moyen",
+            "profitFactor": "Facteur de Profit"
+        },
+        "journal": {
+            "openedFrom": {
+                "label": "Ouvert à Partir De"
+            },
+            "openedTo": {
+                "label": "Ouvert à"
+            },
+            "clearFiltersButton": "EFFACER LES FILTRES",
+            "exportButton": "EXPORTER",
+            "tableMessage": "Oh-oh, nous n'avons rien trouvé ! Essayez à nouveau de rechercher avec des entrées différentes."
+        }
+    },
+
+    "table": {
+        "headers": {
+            "ticket": "Billet",
+            "openTime": "Temps d'ouverture",
+            "cmd": "Taper",
+            "volume": "Volume",
+            "symbol": "Symbole",
+            "openPrice": "Prix Ouvert",
+            "sl": "S/L",
+            "tp": "T/P",
+            "closeTime": "La Période de Fermeture",
+            "closePrice": "Prix de Clôture",
+            "profit": "Profit",
+            "change": "Changement"
+        }
+    },
+
+    "thresholds": {
+        "topThresholdLabel": "Solde Cible",
+        "bottomThresholdLabel": "Solde Minimum Autorisé"
+    },
+
+    "toGoal": "Vers le but:",
+    "target": "Cible:",
+    "numberOfTrades": "Nombre de Transactions",
+    "loading": "Chargement...",
+    "message": "Oh-oh, nous n'avons rien trouvé! Essayez d'abord le commerce."
+}

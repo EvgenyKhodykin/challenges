@@ -1,0 +1,41 @@
+{
+    "formVerify": {
+        "error": "L'inscription a échoué. Veuillez réessayer plus tard.",
+        "success": "Nous avons envoyé un e-mail de vérification avec les instructions d'inscription. Veuillez vérifier votre boîte de réception."
+    },
+
+    "formFinalize": {
+        "instructions": "Entrez vos détails pour créer votre compte.",
+        "error": "L'inscription a échoué. Veuillez réessayer plus tard.",
+        "success": {
+            "title": "Félicitations !",
+            "personalMessage": "Vous avez rejoint {{name}}.",
+            "generalMessage": "Bienvenue à la pointe du trading."
+        },
+        "firstName": {
+            "label": "Prénom",
+            "required": "Veuillez entrer votre prénom"
+        },
+        "lastName": {
+            "label": "Nom de famille",
+            "required": "Veuillez entrer votre nom de famille"
+        },
+        "nickname": {
+            "label": "Surnom (optionnel)"
+        },
+        "password": {
+            "label": "Mot de passe",
+            "invalid": "Votre mot de passe doit comporter au minimum 8 caractères avec au moins 1 lettre majuscule, 1 lettre minuscule, un chiffre et un caractère spécial",
+            "required": "Veuillez entrer votre mot de passe"
+        },
+        "termsAndPolicy": {
+            "label": "J'ai plus de 18 ans et j'ai lu et accepte les <0>Termes & Conditions</0> et la <1>Politique de Confidentialité & RGPD</1>",
+            "required": "Veuillez indiquer que vous acceptez les Termes & Conditions, la Politique de Confidentialité et le RGPD"
+        },
+        "subscribeNewsletters": {
+            "label": "Je souhaite recevoir les bulletins d'information par e-mail."
+        },
+        "continueButton": "Continuer",
+        "getStartedButton": "Commencer"
+    }
+}

@@ -1,0 +1,52 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px 0 25px;
+    color: var(--text-color-secondary);
+}
+
+.Copy {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 0;
+    text-align: left;
+    font-weight: 1rem;
+    line-height: 2.5em;
+}
+
+@include media-breakpoint-up(md) {
+    .Footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 $grid-gutter;
+    }
+
+    .Copy {
+        margin-top: 0;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Footer {
+        &::after {
+            content: '\00A9 ' attr(data-desktop);
+            display: block;
+            height: 0;
+            visibility: hidden;
+            overflow: hidden;
+            user-select: none;
+            pointer-events: none;
+
+            @media speech {
+                display: none;
+            }
+        }
+    }
+}

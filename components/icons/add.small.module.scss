@@ -1,0 +1,18 @@
+.Root {
+    width: 24px;
+    height: 24px;
+    fill: none;
+
+    circle {
+        stroke: currentColor;
+        stroke-dasharray: 4 4;
+        stroke-width: 2px;
+    }
+
+    path {
+        stroke: currentColor;
+        stroke-width: 2px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+}

@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Alert {
+    @include alert();
+    background-color: var(--success-color-main);
+    color: var(--success-color-foreground);
+    border: 1px solid var(--success-color-border);
+
+    div[class*='MuiAlert-icon'] {
+        padding: 0;
+        color: var(--success-color-foreground);
+    }
+
+    div[class*='MuiAlert-message'] {
+        color: var(--success-color-foreground);
+        padding: 0;
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        z-index: 0;
+    }
+
+    &::before {
+        border-radius: 8px;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .Alert {
+        @include alert(sm);
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Alert {
+        @include alert(md);
+    }
+}

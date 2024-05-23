@@ -1,0 +1,20 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Header {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.Body {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.Footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+}

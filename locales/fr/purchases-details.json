@@ -1,0 +1,31 @@
+{
+    "title": "Reçu",
+    "keywords": "reçu",
+    "description": "Reçu",
+
+    "receipt": {
+        "title": "Reçu",
+        "printButtonLabel": "IMPRIMER",
+        "downloadButtonLabel": "TÉLÉCHARGER",
+
+        "message": {
+            "part1": "Si vous avez des questions concernant le reçu, veuillez contacter notre",
+            "part2": "équipe de soutien"
+        },
+
+        "soldTo": "Vendu à:",
+        "date": "Date:",
+        "orderNumber": "Commande #:",
+        "subtotal": "Quantité Total:",
+        "discount": "Rabais:",
+        "total": "Total:",
+        "totalPaid": "Total payé:",
+
+        "tableHeaders": {
+            "item": "Article",
+            "quantity": "Quantité",
+            "unitPrice": "Prix ​​Unitaire",
+            "amount": "Montant"
+        }
+    }
+}

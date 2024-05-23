@@ -1,0 +1,158 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    padding: $grid-gutter * 0.5 0;
+    position: relative;
+}
+
+.Track {
+    height: 2px;
+    background-color: var(--neutral-color-50);
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    border-radius: 2px;
+    position: relative;
+    margin-top: $grid-gutter * 0.5;
+    margin-bottom: $grid-gutter * 0.5;
+}
+
+.Progress {
+    height: 2px;
+    background-color: var(--success-color-main);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    border-radius: 2px;
+
+    &.Profit {
+        background-color: var(--success-color-main);
+    }
+
+    &.Loss {
+        background-color: var(--error-color-main);
+    }
+}
+
+.Dot {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow:
+        0px 6px 8px -6px var(--text-color-primary),
+        0px 8px 12px -6px var(--text-color-primary),
+        inset 0px 0px 0px 2px white,
+        inset 0px 0px 0px 4px var(--text-color-primary);
+
+    .Label {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.4em;
+        text-align: center;
+        color: var(--text-color-tertiary);
+        white-space: nowrap;
+        position: absolute;
+        top: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        sup {
+            font-size: 0.5em;
+            line-height: 0;
+        }
+    }
+
+    &.First {
+        .Label {
+            left: 0;
+            transform: none;
+        }
+    }
+
+    &.Last {
+        transform: translateX(-12px);
+        .Label {
+            left: initial;
+            transform: none;
+            right: 0;
+        }
+    }
+}
+
+.Account {
+    position: absolute;
+    width: 2px;
+    height: 14px;
+    background-color: var(--text-color-primary);
+    line-height: 0;
+
+    .Label {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.4em;
+        text-align: center;
+        color: var(--text-color-tertiary);
+        white-space: nowrap;
+        position: absolute;
+        top: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        sup {
+            font-size: 0.5em;
+            line-height: 0;
+        }
+    }
+}
+
+.Balance {
+    position: absolute;
+    line-height: 0;
+    z-index: 2;
+    transform: translateX(-6px);
+
+    .Label {
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        text-align: center;
+        color: var(--text-color-primary);
+        white-space: nowrap;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        sup {
+            font-size: 0.5em;
+            line-height: 0;
+        }
+    }
+
+    &.First {
+        transform: none;
+        .Label {
+            left: 0;
+            transform: none;
+        }
+    }
+
+    &.Last {
+        transform: translateX(-12px);
+        .Label {
+            left: initial;
+            transform: none;
+            right: 0;
+        }
+    }
+}

@@ -1,0 +1,145 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    flex-grow: 1;
+    flex-shrink: 1;
+    position: relative;
+
+    &.Hover {
+        .Graph {
+            svg {
+                path:nth-child(2) {
+                    stroke: var(--text-color-primary);
+                    transition: stroke 0.4s ease;
+                }
+            }
+        }
+
+        &:hover {
+            .Graph {
+                svg {
+                    path:nth-child(2) {
+                        stroke: var(--info-color-main);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Graph {
+    height: 100%;
+}
+
+.ForeGroundCompetition,
+.ForeGroundChallenge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+
+    .Label {
+        font-size: 0.8125rem;
+        font-weight: 400;
+        line-height: 1.4em;
+        color: var(--text-color-primary);
+    }
+
+    .Amount {
+        font-size: 2.1875rem;
+        font-weight: 400;
+        line-height: 1.4em;
+        color: var(--text-color-primary);
+        sup {
+            font-size: 0.6875rem;
+            font-weight: 400;
+            position: relative;
+            top: -2px;
+        }
+    }
+}
+
+.Preview {
+    padding-top: 15px;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .Amount {
+        font-size: 1.575rem;
+        font-weight: 600;
+    }
+}
+
+.ForeGroundCompetition {
+    .Icon {
+        color: var(--text-color-primary);
+        margin-bottom: 13px;
+    }
+}
+
+.ForeGroundChallenge {
+    .Button {
+        margin-top: $grid-gutter * 0.5;
+    }
+}
+
+.FailedRules,
+.OngoingRules {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+
+    .Button {
+        padding: 5px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        .Icon {
+            transition: color 0.3s linear;
+        }
+    }
+}
+
+.FailedRules {
+    .Button {
+        .Icon {
+            color: var(--error-color-border);
+        }
+
+        &:hover {
+            .Icon {
+                color: var(--error-color-main);
+            }
+        }
+    }
+}
+
+.OngoingRules {
+    .Button {
+        .Icon {
+            color: var(--neutral-color-70);
+
+            &.Passed {
+                color: var(--success-color-main);
+            }
+        }
+
+        &:hover {
+            .Icon {
+                color: var(--text-color-primary) !important;
+            }
+        }
+    }
+}

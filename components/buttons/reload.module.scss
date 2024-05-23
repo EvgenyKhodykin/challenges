@@ -1,0 +1,58 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Root {
+    height: 44px;
+    min-width: initial;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    &:disabled {
+        .Icon {
+            path {
+                animation: rotate 1s linear infinite;
+                transform-origin: center;
+            }
+        }
+    }
+}
+
+.Text {
+    display: none;
+}
+
+.Icon {
+    margin-right: 0;
+
+    path {
+        stroke: var(--neutral-color-0);
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        height: 34px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .Text {
+        display: inline;
+        font-size: 0.75rem;
+    }
+
+    .Icon {
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+    }
+}

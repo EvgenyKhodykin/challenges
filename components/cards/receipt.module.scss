@@ -1,0 +1,183 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.CompanyInfo,
+.PurchaseInfo,
+.OrderInfo {
+    margin-top: $grid-gutter * 0.375;
+}
+
+.CompanyName {
+    margin-bottom: $grid-gutter * 0.333;
+    font-size: 1.375em;
+    font-weight: 500;
+}
+
+.Label {
+    display: inline-block;
+    font-weight: 500;
+    margin-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.LineItems {
+    display: flex;
+    flex-direction: row;
+    margin-top: $grid-gutter * 0.5;
+    margin-bottom: $grid-gutter * 0.333;
+    padding-bottom: $grid-gutter * 0.333;
+    border-bottom: 1px solid var(--neutral-color-60);
+
+    .Container {
+        display: flex;
+        flex-direction: column;
+        &:nth-child(1) {
+            flex: 5;
+        }
+        &:nth-child(2) {
+            flex: 7;
+        }
+    }
+
+    .TH,
+    .TD {
+        &:first-child {
+            font-weight: 600;
+            border-bottom: 1px solid var(--neutral-color-60);
+        }
+    }
+}
+
+.Totals {
+    .TH {
+        padding-left: $grid-gutter * 0.5;
+        font-weight: 400;
+    }
+}
+
+.TH,
+.TD {
+    padding: $grid-gutter * 0.25;
+}
+
+.TH {
+    font-weight: 600;
+}
+
+.Container {
+    display: flex;
+}
+
+.Discount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Coupon {
+    margin-left: -7px;
+
+    & > span {
+        line-height: 1.5rem;
+        display: flex;
+    }
+}
+
+.TotalPaid {
+    margin-top: $grid-gutter * 0.5;
+    padding-top: $grid-gutter * 0.5;
+    padding-bottom: $grid-gutter * 0.5;
+    font-weight: 600 !important;
+    font-size: 1.1rem;
+    color: var(--text-color-primary) !important;
+    border-top: 1px solid var(--neutral-color-60);
+    border-bottom: 1px solid var(--neutral-color-60);
+}
+
+.TotalPaidAmount {
+    font-weight: 600 !important;
+    color: var(--text-color-primary) !important;
+}
+
+@include media-breakpoint-up(md) {
+    .OrderInfo {
+        margin-top: 0;
+    }
+
+    .PurchaseInfo {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .ProductName {
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+
+    .TH,
+    .TD {
+        text-align: center;
+        &:first-child {
+            text-align: left;
+        }
+        &:last-child {
+            text-align: right;
+        }
+    }
+
+    .LineItems {
+        display: block;
+        margin-top: $grid-gutter * 1.25;
+        padding-bottom: 0;
+        border-bottom: none;
+
+        .Container {
+            display: flex;
+            flex-direction: row;
+            &:nth-child(1),
+            &:nth-child(2) {
+                flex: auto;
+            }
+        }
+
+        .TH,
+        .TD {
+            border-bottom: 1px solid var(--neutral-color-50);
+            &:first-child {
+                font-weight: 600;
+                border-bottom: 1px solid var(--neutral-color-50);
+            }
+        }
+
+        .TH {
+            font-size: 0.8125rem;
+            font-weight: 600;
+        }
+
+        .TD {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+    }
+
+    .Discount {
+        align-items: flex-end;
+    }
+
+    .Totals {
+        .TH,
+        .TD {
+            margin-top: 0;
+            text-align: right;
+            color: var(--text-color-secondary);
+            border-bottom: none;
+            border-top: none;
+        }
+    }
+
+    .TotalPaid {
+        font-size: 1.25rem;
+    }
+}

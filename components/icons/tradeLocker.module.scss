@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    display: flex;
+    width: 120px;
+    height: auto;
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        width: 170px;
+        height: 72px;
+    }
+}

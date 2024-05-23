@@ -1,0 +1,39 @@
+{
+    "title": "Competitions Details",
+    "keywords": "competitions details",
+    "description": "Competitions Details",
+
+    "standings": {
+        "rightBoard": {
+            "title": "Standings",
+            "inputLabel": "Search by name"
+        },
+        "leftBoard": {
+            "duration": {
+                "header": "Duration"
+            },
+            "tradingDays": {
+                "target": "Target:",
+                "toGoal": "To goal:"
+            },
+            "dailyDrawdown": {
+                "todayEquity": "Today's equity:"
+            },
+            "totalDrawdown": {
+                "totalEquity": "Total equity:"
+            }
+        }
+    },
+
+    "table": {
+        "headers": {
+            "id": "#",
+            "name": "Name",
+            "account": "Account",
+            "profit": "Profit",
+            "trailing": "Trailing By",
+            "prize": "Prize",
+            "sharing": ""
+        }
+    }
+}

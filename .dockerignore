@@ -1,0 +1,24 @@
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+# /build
+
+# misc
+.vscode
+.DS_Store
+Dockerfile
+npm-debug.log
+README.md
+.dockerignore
+.next
+.git
+.eslintcache
+
+# Cypress
+cypress/videos
+cypress/screenshots
+

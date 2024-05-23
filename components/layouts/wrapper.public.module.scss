@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Wrapper {
+    background-color: var(--neutral-color-10);
+}
+
+@include media-breakpoint-up(md) {
+    .Wrapper {
+        background: var(--gradient-color-neutral);
+    }
+}

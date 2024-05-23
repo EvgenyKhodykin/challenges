@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Button {
+    @include button-breakpoint-relevant(xs);
+    @include button-general();
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color-primary);
+    border: 1.5px solid var(--text-color-primary);
+
+    &:hover {
+        background-color: var(--secondary-color-main);
+        color: var(--neutral-color-0);
+        border: 1.5px solid var(--secondary-color-main);
+    }
+
+    .Icon {
+        margin-right: 10px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Button {
+        @include button-breakpoint-relevant(md);
+    }
+}

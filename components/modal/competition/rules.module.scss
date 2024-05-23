@@ -1,0 +1,144 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    color: var(--text-color-primary);
+}
+
+.ModalHeader {
+    padding: $grid-gutter * 0.75 0 $grid-gutter * 0.75 $grid-gutter * 0.5;
+    display: block;
+}
+
+.StatusDate {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.DateContainer {
+    margin-left: $grid-gutter * 1.25;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1.4em;
+}
+
+.Date {
+    color: var(--text-color-primary);
+}
+
+.Title {
+    margin-top: $grid-gutter * 0.75;
+    font-size: 1.375rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.Participants {
+    justify-content: center;
+    margin: $grid-gutter * 0.25 0;
+}
+
+.HeaderButton {
+    margin: $grid-gutter * 0.5 auto 0 auto;
+}
+
+.ModalBody {
+    & > div {
+        padding-top: $grid-gutter * 0.75;
+        padding-bottom: $grid-gutter;
+    }
+}
+
+.BodyHeader {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .Icon {
+        margin-right: 14px;
+    }
+
+    .IconLabel {
+        font-weight: 500;
+        font-size: 1.375rem;
+        line-height: 1.4em;
+        text-align: left;
+        color: var(--text-color-primary);
+    }
+}
+
+.Prizes {
+    & > div {
+        margin-bottom: $grid-gutter * 0.5;
+    }
+}
+
+.Description {
+    margin-top: $grid-gutter;
+}
+
+.FAQs {
+    margin-top: $grid-gutter * 0.75;
+    text-align: center;
+}
+
+@include media-breakpoint-up(md) {
+    .ModalHeader {
+        padding: $grid-gutter * 2 0;
+        display: flex;
+    }
+
+    .CompetitionOverview {
+        padding-left: $grid-gutter * 1.25;
+    }
+
+    .DateContainer {
+        display: block;
+        margin-top: $grid-gutter * 0.5;
+        margin-left: 0;
+    }
+
+    .StatusDate {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .Title {
+        margin-top: $grid-gutter * 1.25;
+        text-align: left;
+    }
+
+    .Participants {
+        justify-content: flex-start;
+    }
+
+    .HeaderButton {
+        margin-top: $grid-gutter;
+    }
+
+    .ModalBody {
+        padding-bottom: $grid-gutter * 1.5;
+        & > div {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    .Prizes {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 0;
+
+        & > div {
+            margin-bottom: 0;
+        }
+    }
+}

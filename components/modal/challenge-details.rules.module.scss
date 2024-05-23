@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Header {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--text-color-primary);
+
+    .Icon {
+        margin-right: 14px;
+    }
+
+    .Text {
+        font-weight: 600;
+        font-size: 1.375rem;
+        line-height: 1.4em;
+        text-align: left;
+        color: var(--text-color-primary);
+    }
+}
+
+.FAQs {
+    margin-top: $grid-gutter * 2;
+    text-align: center;
+}

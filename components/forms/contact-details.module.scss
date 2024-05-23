@@ -1,0 +1,44 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    .HolderCheckboxes {
+        padding-top: 0;
+        padding-bottom: 5px;
+        width: 100%;
+        label {
+            align-items: flex-start;
+            span {
+                color: var(--text-color-primary);
+            }
+            span[class*='Mui-checked'] {
+                color: var(--secondary-color-main);
+            }
+            span[class*='MuiTypography-root'] {
+                font-weight: 400;
+                font-size: 1.0625rem;
+                line-height: 1.4em;
+                letter-spacing: normal;
+                color: var(--text-color-primary);
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        .HolderCheckboxes {
+            padding-top: 10px;
+            padding-bottom: 32px;
+            label {
+                align-items: center;
+                span[class*='MuiTypography-root'] {
+                    font-size: 1rem;
+                    line-height: 1.4;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

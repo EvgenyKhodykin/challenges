@@ -1,0 +1,43 @@
+{
+    "plugins": ["@typescript-eslint", "simple-import-sort"],
+    "extends": [
+        "next",
+        "next/core-web-vitals",
+        "plugin:jest-dom/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+    ],
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "prefer-const": "error",
+        "arrow-body-style": ["error", "as-needed"],
+        "indent": 0,
+        "linebreak-style": 0,
+        "sort-imports": 0,
+        "react/self-closing-comp": ["error", { "component": true, "html": true }],
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+        "@typescript-eslint/no-namespace": "off",
+        "max-len": [
+            "error",
+            {
+                "code": 90,
+                "tabWidth": 2,
+                "ignoreComments": true, //"comments": 90
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true
+            }
+        ]
+    },
+    "globals": {
+        "React": true,
+        "JSX": true,
+        "jest": true
+    }
+}

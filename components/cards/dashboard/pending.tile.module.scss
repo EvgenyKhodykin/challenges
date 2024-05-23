@@ -1,0 +1,136 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--secondary-color-main);
+    }
+    50% {
+        box-shadow: 0 0 0 12px var(--neutral-color-10);
+    }
+    100% {
+        box-shadow: 0 0 0 0 var(--neutral-color-10);
+    }
+}
+
+.Root {
+    border: 1px solid var(--secondary-color-main);
+    background-color: var(--neutral-color-15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    animation: pulse 2s infinite;
+
+    &:hover {
+        animation: none;
+    }
+}
+
+.Top,
+.Middle,
+.Bottom {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.Top {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: $grid-gutter * 0.5;
+    padding-right: $grid-gutter * 0.5;
+    padding-top: $grid-gutter * 0.5;
+
+    .TimeOutMessage {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--text-color-primary);
+        line-height: 1.4em;
+        text-align: center;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        white-space: nowrap;
+    }
+
+    .Timer {
+        width: 54px;
+        height: 54px;
+        position: absolute;
+        top: 27px;
+        right: 27px;
+
+        circle {
+            transition: all 1s linear;
+        }
+
+        .First {
+            transition: all 1s linear;
+            stroke: var(--neutral-color-50);
+            stroke-width: 4;
+            stroke-linecap: round;
+            fill: transparent;
+            transform: rotateZ(-90deg);
+            transform-origin: center;
+        }
+
+        .Last {
+            transition: all 1s linear;
+            stroke: var(--secondary-color-main);
+            stroke-width: 4;
+            stroke-linecap: square;
+            fill: transparent;
+            transform: rotateZ(-90deg);
+            transform-origin: center;
+        }
+
+        .TextTimer {
+            font-family: Roboto;
+            font-size: 0.6rem;
+            font-weight: 400;
+        }
+    }
+}
+
+.Middle {
+    align-self: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: $grid-gutter * 0.5;
+    padding-right: $grid-gutter * 0.5;
+
+    .Bullet {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--text-color-primary);
+        line-height: 1.4em;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .Dot {
+        margin-right: 15px;
+        margin-left: 5px;
+        font-size: 10px;
+        color: var(--text-color-primary);
+    }
+
+    .Check {
+        font-size: 22px;
+        margin-right: 8px;
+        color: var(--secondary-color-main);
+    }
+}
+
+.Bottom {
+    padding-bottom: $grid-gutter * 0.5;
+}

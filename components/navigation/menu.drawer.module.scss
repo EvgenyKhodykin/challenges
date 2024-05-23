@@ -1,0 +1,40 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Item {
+    display: block;
+    padding: 8px 0 8px 24px;
+    border-bottom: 1px solid var(--neutral-color-50);
+}
+
+.Link {
+    color: var(--text-color-primary);
+    font-size: 1rem;
+    line-height: 2.5em;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.Active {
+    font-weight: 600;
+}
+
+@include media-breakpoint-up(md) {
+    .Navigation {
+        margin-top: 74px;
+    }
+
+    .Item {
+        padding: 8px 36px;
+        border-bottom: none;
+    }
+}

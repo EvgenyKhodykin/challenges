@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    background-color: var(--neutral-color-0);
+    border: 1px solid var(--neutral-color-60);
+    border-radius: 12px;
+    box-shadow: var(--shadow-color-neutral100);
+    padding: $grid-gutter * 0.5 16px;
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        border-radius: 16px;
+        padding: $grid-gutter * 0.5;
+    }
+}

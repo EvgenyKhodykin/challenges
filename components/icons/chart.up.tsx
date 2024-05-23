@@ -1,0 +1,23 @@
+import type { SvgIconProps } from '@mui/material'
+import { SvgIcon } from '@mui/material'
+import classNames from 'classnames'
+
+import styles from './chart.up.module.scss'
+import type Props from './icon-props.interface'
+
+const Component: React.FC<SvgIconProps & Props> = ({
+    className,
+    ...props
+}: SvgIconProps & Props): JSX.Element => (
+    <SvgIcon
+        {...props}
+        className={classNames(styles.Root, className)}
+        viewBox={'0 0 24 24'}
+    >
+        <path d='M21.4912 19.2236H5.36621V4.59863C5.36621 4.49551 5.28184 4.41113 5.17871 4.41113H3.86621C3.76309 4.41113 3.67871 4.49551 3.67871 4.59863V20.7236C3.67871 20.8268 3.76309 20.9111 3.86621 20.9111H21.4912C21.5943 20.9111 21.6787 20.8268 21.6787 20.7236V19.4111C21.6787 19.308 21.5943 19.2236 21.4912 19.2236ZM7.8459 15.6072C7.91855 15.6799 8.03574 15.6799 8.11074 15.6072L11.3521 12.3822L14.3428 15.3916C14.4154 15.4643 14.535 15.4643 14.6076 15.3916L21.0623 8.93926C21.135 8.8666 21.135 8.74707 21.0623 8.67441L20.1342 7.74629C20.0989 7.71139 20.0514 7.69182 20.0018 7.69182C19.9522 7.69182 19.9046 7.71139 19.8693 7.74629L14.4787 13.1346L11.4928 10.1299C11.4575 10.095 11.4099 10.0754 11.3604 10.0754C11.3108 10.0754 11.2632 10.095 11.2279 10.1299L6.92012 14.4119C6.88522 14.4472 6.86565 14.4947 6.86565 14.5443C6.86565 14.5939 6.88522 14.6415 6.92012 14.6768L7.8459 15.6072Z' />
+    </SvgIcon>
+)
+
+Component.displayName = 'Icon:Chart.up'
+
+export default Component

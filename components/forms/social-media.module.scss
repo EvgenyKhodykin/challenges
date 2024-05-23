@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    .HolderSocialLabel {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        span {
+            font-size: 1.0625rem;
+            font-weight: 400;
+            line-height: 1.6em;
+            color: var(--text-color-primary);
+            display: inline-block;
+            margin-right: 10px;
+            text-align: left;
+        }
+    }
+    .HolderDomain {
+        font-size: 1.0625rem;
+        font-weight: 400;
+        line-height: 1.6em;
+        color: var(--text-color-primary);
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .HolderLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        .HolderSocialLabel {
+            padding-top: 0;
+            padding-bottom: 0;
+            span {
+                font-size: 1rem;
+                line-height: 1.4em;
+            }
+        }
+        .HolderDomain {
+            padding-top: 0;
+            padding-bottom: 0;
+            font-size: 1rem;
+            line-height: 1.4em;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+}

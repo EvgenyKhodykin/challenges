@@ -1,0 +1,9 @@
+.Root {
+    color: var(--emphasis-color);
+
+    path {
+        fill: currentColor;
+        fill-rule: evenodd;
+        clip-rule: evenodd;
+    }
+}

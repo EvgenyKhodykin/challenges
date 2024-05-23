@@ -1,0 +1,17 @@
+{
+    "title": "Forgot Password",
+    "keywords": "forgot password",
+    "description": "Forgot Password",
+
+    "form": {
+        "error": "Failed to send reset password email",
+        "success": "We sent an email with the password reset instructions. Please check your inbox.",
+        "email": {
+            "label": "Email",
+            "invalid": "Invalid email",
+            "required": "Email is required"
+        }
+    },
+    "resetPassword": "Reset Password",
+    "knowYourPassword": "Know your password?"
+}

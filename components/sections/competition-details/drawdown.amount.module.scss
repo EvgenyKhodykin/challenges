@@ -1,0 +1,55 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Bottom {
+    padding-top: $grid-gutter * 0.555;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.ValueMax {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.4em;
+    color: var(--text-color-secondary);
+    text-align: center;
+
+    .Amount {
+        font-size: 1.375rem;
+        font-weight: 600;
+        color: var(--text-color-primary);
+
+        sup {
+            font-weight: inherit;
+            font-size: 0.75rem;
+            line-height: 1em;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .ValueMax {
+        font-size: 0.8125rem;
+
+        .Amount {
+            font-size: 1.0625rem;
+
+            sup {
+                font-size: 0.55rem;
+            }
+        }
+    }
+}

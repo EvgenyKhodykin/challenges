@@ -1,0 +1,11 @@
+.Root {
+    width: 24px;
+    height: 25px;
+    fill: none;
+
+    path {
+        fill: currentColor;
+        clip-rule: evenodd;
+        fill-rule: evenodd;
+    }
+}

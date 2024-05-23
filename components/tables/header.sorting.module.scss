@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.Root {
+    border-bottom: 1px solid var(--neutral-color-30);
+}
+
+.Cell {
+    border-bottom: none;
+    padding: 10px;
+
+    &:first-child {
+        padding-left: $grid-gutter * 0.5;
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: $grid-gutter * 0.5;
+        padding-right: 0;
+    }
+
+    .WithSorting,
+    .WithoutSorting {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        color: var(--text-color-primary);
+        white-space: nowrap;
+
+        svg {
+            color: var(--text-color-primary) !important;
+        }
+    }
+}

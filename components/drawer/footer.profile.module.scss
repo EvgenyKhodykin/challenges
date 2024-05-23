@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Footer {
+    padding-left: $grid-gutter * 0.5;
+    padding-right: $grid-gutter * 0.5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@include media-breakpoint-up(md) {
+    .Footer {
+        padding-left: $grid-gutter;
+        padding-right: $grid-gutter;
+    }
+}

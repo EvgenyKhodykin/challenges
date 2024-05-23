@@ -1,0 +1,40 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Pagination {
+    & > div {
+        padding-left: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    div[class*='MuiTablePagination-spacer'],
+    p[class*='MuiTablePagination-displayedRows'] {
+        display: none;
+    }
+
+    p[class*='MuiTablePagination-selectLabel'] {
+        position: absolute;
+        margin: 0;
+        color: var(--text-color-primary);
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 400;
+        font-size: 0.85rem;
+        line-height: 1.4em;
+    }
+
+    div[class*='MuiInputBase-root'] {
+        position: absolute;
+        color: var(--text-color-primary);
+        margin: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 100px;
+    }
+
+    *[class*='MuiSelect-icon'] {
+        color: currentColor !important;
+    }
+}

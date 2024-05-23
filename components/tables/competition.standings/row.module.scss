@@ -1,0 +1,106 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Cell {
+    padding: 13px;
+    color: var(--neutral-color-90);
+    font-size: 1rem;
+}
+
+.Prize,
+.Id {
+    .Icon {
+        margin-right: 6px;
+        width: 18px;
+        height: 18px;
+
+        &.Gold {
+            color: var(--auxiliary-color-gold);
+        }
+
+        &.Silver {
+            color: var(--auxiliary-color-silver);
+        }
+
+        &.Bronze {
+            color: var(--auxiliary-color-bronze);
+        }
+    }
+}
+
+.Id {
+    .Indicator {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 6px;
+        width: 18px;
+        height: 18px;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: var(--neutral-color-70);
+            border-radius: 50%;
+        }
+    }
+
+    .Text {
+        font-weight: 600;
+    }
+}
+
+.Prize {
+    display: inline-block;
+    text-align: center;
+
+    .Amount {
+        &.Gold {
+            color: var(--auxiliary-color-gold);
+        }
+
+        &.Silver {
+            color: var(--auxiliary-color-silver);
+        }
+
+        &.Bronze {
+            color: var(--auxiliary-color-bronze);
+        }
+    }
+}
+
+.Share {
+    color: var(--neutral-color-80);
+}
+
+.Current {
+    background-color: var(--neutral-color-80);
+
+    .Cell,
+    .Share {
+        color: var(--neutral-color-0);
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Cell {
+        padding: $grid-gutter * 0.5;
+        font-size: 0.9375rem;
+    }
+
+    .Prize,
+    .Id {
+        .Icon {
+            margin-right: 10px;
+            margin: 0 auto;
+        }
+    }
+
+    .Id {
+        .Indicator {
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    .TableLine {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+        .TableItem {
+            width: 50%;
+            margin-top: $grid-gutter;
+            margin-bottom: $grid-gutter;
+            &:first-child,
+            &:nth-child(3) {
+                border-right: 1px solid var(--neutral-color-50);
+            }
+        }
+    }
+
+    .LiveLine {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        padding-top: $grid-gutter;
+        padding-bottom: $grid-gutter;
+
+        .LiveItem {
+            width: 50%;
+            &:first-child {
+                border-right: 1px solid var(--neutral-color-50);
+            }
+        }
+    }
+
+    .Label {
+        display: block;
+        font-size: 0.815rem;
+        font-weight: 400;
+        line-height: 1.4em;
+        text-align: center;
+        color: var(--text-color-tertiary);
+        margin-bottom: $grid-gutter * 0.75;
+    }
+
+    .Percent,
+    .Value,
+    .Amount {
+        display: block;
+        font-size: 1.6875rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        color: var(--text-color-primary);
+        text-align: center;
+
+        sup {
+            font-size: 0.8125rem;
+            font-weight: 400;
+            line-height: 0;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Summary {
+        .TableLine {
+            padding-top: $grid-gutter;
+            padding-bottom: $grid-gutter;
+            flex-wrap: nowrap;
+
+            .TableItem {
+                width: 25%;
+
+                &:first-child,
+                &:nth-child(2),
+                &:nth-child(3) {
+                    border-right: 1px solid var(--neutral-color-50);
+                }
+            }
+        }
+
+        .Amount,
+        .Percent,
+        .Value {
+            font-size: 1.9375rem;
+
+            sup {
+                font-size: 1.125rem;
+            }
+        }
+    }
+}

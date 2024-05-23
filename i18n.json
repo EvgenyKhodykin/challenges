@@ -1,0 +1,33 @@
+{
+    "locales": ["en", "fr"],
+    "defaultLocale": "en",
+    "pages": {
+        "*": ["common"],
+        "/login": ["login"],
+        "/signup": ["signup"],
+        "/signup/verify": ["verify", "security", "signup"],
+        "/forgot": ["forgot"],
+        "/profile/details": ["profile"],
+        "/profile/security": ["profile", "security"],
+        "/profile/purchases": ["profile", "purchases-list"],
+        "/profile/purchases/[id]": ["purchases-details"],
+        "/downloads": ["downloads"],
+        "/competitions": ["competitions-list"],
+        "/competitions/[id]": ["competitions-list", "affiliates", "competitions-details"],
+        "/": ["dashboard"],
+        "/leaderboard": ["leaderboard"],
+        "/leaderboard/[id]": ["leaderboard", "challenge-details"],
+        "/affiliates": ["affiliates"],
+        "/challenges/join": ["challenge-join"],
+        "/challenges/[id]": [
+            "challenge-join",
+            "competitions-list",
+            "dashboard",
+            "challenge-details"
+        ],
+        "/reset-password": ["reset-password"],
+        "/404": ["404"],
+        "/500": ["500"]
+    },
+    "defaultNS": "common"
+}

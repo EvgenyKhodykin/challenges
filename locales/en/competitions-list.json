@@ -1,0 +1,48 @@
+{
+    "title": "Competitions",
+    "keywords": "competitions",
+    "description": "Competitions",
+
+    "filters": {
+        "status": {
+            "all": "ALL",
+            "upcoming": "UPCOMING",
+            "active": "ACTIVE",
+            "past": "PAST"
+        }
+    },
+
+    "cards": {
+        "active": {
+            "status": "Active"
+        },
+        "upcoming": {
+            "status": "Upcoming"
+        },
+        "closed": {
+            "status": "Closed"
+        }
+    },
+
+    "emptyList": {
+        "message": "No {{status}} competitions available",
+        "status": {
+            "active": "active",
+            "upcoming": "upcoming",
+            "past": "past",
+            "all": ""
+        }
+    },
+
+    "prizeLabel": "Place Prize is",
+    "startsOn": "Starts on",
+    "startsIn": "Starts in",
+    "buttonStandings": "Standings",
+    "buttonRegister": "REGISTER",
+    "alertMessageSuccess": "Successful registration!",
+    "alertServerError": "Failed to register!",
+    "alertAlreadyRegistered": "Already Registered. You can not register for this challenge more than once!",
+    "registeredLabel": "REGISTERED",
+    "registrationEnds": "Registration ends on:",
+    "registrationEnded": "Registration ended on:"
+}

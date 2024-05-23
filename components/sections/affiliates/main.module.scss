@@ -1,0 +1,106 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    display: block;
+}
+
+.Wrapper {
+    overflow: hidden;
+}
+
+.Overview {
+    padding-top: $grid-gutter;
+    padding-bottom: $grid-gutter;
+    margin: 0;
+}
+
+.List {
+    display: flex;
+    flex-direction: column;
+    margin-top: $grid-gutter * 0.5;
+    margin-bottom: $grid-gutter * 0.5;
+    padding-top: $grid-gutter;
+    padding-bottom: $grid-gutter;
+}
+
+.ReferralsOverview {
+    margin-bottom: $grid-gutter * 0.5;
+}
+
+.Commissions {
+    margin-bottom: $grid-gutter * 0.5;
+}
+
+.FilterTime {
+    margin-left: $grid-gutter * 0.5;
+    margin-right: $grid-gutter * 0.5;
+    margin-top: $grid-gutter * 0.66;
+    margin-bottom: $grid-gutter * 0.66;
+    overflow-y: scroll;
+}
+
+.FilterType {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: $grid-gutter * 0.83;
+    overflow-y: scroll;
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        padding: 0;
+    }
+
+    .Wrapper {
+        padding: 0;
+    }
+
+    .Overview {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .List {
+        margin-top: initial;
+        margin-bottom: initial;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding-left: $grid-gutter * 1.19;
+        padding-right: $grid-gutter * 0.5;
+        padding-top: $grid-gutter * 0.5;
+        padding-bottom: $grid-gutter * 0.5;
+    }
+
+    .FilterTime {
+        margin-left: initial;
+        margin-right: initial;
+        margin-top: initial;
+        margin-bottom: initial;
+        max-width: 180px;
+        margin-bottom: $grid-gutter * 0.83;
+        overflow-y: hidden;
+    }
+
+    .FilterType {
+        justify-content: flex-end;
+        overflow-y: hidden;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Wrapper {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap: nowrap;
+    }
+
+    .Overview {
+        width: 496px;
+    }
+}

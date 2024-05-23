@@ -1,0 +1,18 @@
+.Root {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button {
+    margin-right: 5px;
+}
+
+.Text {
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 1.4em;
+    text-align: left;
+    color: var(--secondary-color-main);
+}

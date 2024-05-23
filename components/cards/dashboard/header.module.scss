@@ -1,0 +1,32 @@
+$header-font-size: 0.8125rem;
+$header-line-height: 1.4em;
+
+.Root {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 17px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+.Date {
+    font-weight: 400;
+    font-size: $header-font-size;
+    line-height: $header-line-height;
+    text-align: right;
+    color: var(--text-color-primary);
+}
+
+.Id {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.4em;
+    color: var(--text-color-tertiary);
+}
+
+.Preview {
+    padding: 0px !important;
+}

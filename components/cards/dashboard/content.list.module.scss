@@ -1,0 +1,189 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 100%;
+    background-color: var(--neutral-color-0);
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.Content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: calc(100% - 50px);
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .Left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .Right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: $grid-gutter;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+}
+
+.Actions {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.Status {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 8px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .Date {
+        font-weight: 400;
+        font-size: 0.8125rem;
+        line-height: 1.4em;
+        color: var(--text-color-primary);
+        margin-left: 16px;
+        text-wrap: nowrap;
+    }
+}
+
+.Tags {
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 90%;
+    position: relative;
+    flex-wrap: wrap;
+
+    span {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 0.6875rem;
+        line-height: 1.4em;
+        text-align: center;
+        color: var(--text-color-primary);
+        padding: 4px 8px;
+        background-color: var(--neutral-color-70);
+        border-radius: 6px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+
+        &:first-child {
+            background-color: var(--info-color-background);
+        }
+    }
+}
+
+.Id {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.4em;
+    text-align: left;
+    color: var(--text-color-quaternary);
+}
+
+.StartingAmount {
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 1.4em;
+    text-align: left;
+    color: var(--text-color-primary);
+
+    sup {
+        font-weight: 400;
+        font-size: 0.6875rem;
+    }
+}
+
+.ButtonDetails {
+    border: none;
+    background-color: transparent;
+    width: 44px;
+    height: 31px;
+    padding: 5px 15px 5px 0;
+    cursor: pointer;
+}
+
+.Right {
+    .Label {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--text-color-primary);
+        line-height: 1.375em;
+    }
+
+    .Amount {
+        font-size: 1.375rem;
+        font-weight: 400;
+        line-height: 1.4em;
+        color: var(--text-color-primary);
+        sup {
+            font-size: 0.6875rem;
+            font-weight: 400;
+            position: relative;
+            top: -2px;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        padding: 8px 15px 11px;
+    }
+
+    .ButtonDetails {
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+
+        &.Hovered {
+            opacity: 1;
+        }
+    }
+
+    .Right {
+        .Amount {
+            font-size: 2.1875rem;
+        }
+    }
+
+    .Tags {
+        flex-wrap: nowrap;
+    }
+}

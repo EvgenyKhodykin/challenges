@@ -1,0 +1,44 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    padding: 0;
+    height: initial;
+    border-radius: 0;
+    flex-wrap: wrap;
+
+    button {
+        height: 24px;
+        border: none !important;
+        border-radius: 6px !important;
+        padding: 8px 15px;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        line-height: 1.4em;
+        color: var(--text-color-primary);
+        margin-right: 8px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        white-space: nowrap;
+        transition: background-color 0.5s ease;
+        text-transform: initial;
+        background-color: var(--neutral-color-50);
+
+        &[class*='Mui-selected'] {
+            background-color: var(--primary-color-main);
+            color: var(--neutral-color-20);
+
+            &:hover {
+                background-color: var(--primary-color-main);
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background-color: var(--neutral-color-50);
+        }
+    }
+}

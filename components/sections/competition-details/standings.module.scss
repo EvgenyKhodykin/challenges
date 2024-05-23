@@ -1,0 +1,108 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    padding: 0;
+}
+
+.Top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: $grid-gutter * 0.5 16px 12px;
+}
+
+.Title {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .Icon {
+        display: inline-block;
+        padding: 3px;
+        border-radius: 4px;
+        line-height: 0;
+        background-color: var(--text-color-primary);
+        margin-right: 10px;
+        color: var(--neutral-color-0);
+
+        .Standings {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .Text {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        text-align: left;
+        color: var(--text-color-primary);
+    }
+}
+
+.Participants {
+    min-width: 131.344px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    .Container {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-left: $grid-gutter * 0.5;
+        padding-right: $grid-gutter * 0.5;
+
+        .Icon {
+            width: 18px;
+            height: 18px;
+            color: var(--text-color-primary);
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .Number {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-color-primary);
+        }
+
+        &:first-child {
+            padding-left: 0;
+            position: relative;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 2px;
+                height: 12px;
+                background-color: var(--neutral-color-70);
+                position: absolute;
+                right: -1px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &.emptyRank {
+                display: none;
+            }
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Top {
+        padding: $grid-gutter * 0.5 $grid-gutter * 0.5 12px;
+    }
+}

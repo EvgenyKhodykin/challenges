@@ -1,0 +1,12 @@
+.Root {
+    fill: none;
+    width: 24px;
+    height: 25px;
+
+    path {
+        stroke: currentColor;
+        stroke-width: 2px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+}

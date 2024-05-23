@@ -1,0 +1,78 @@
+{
+    "title": "Affiliés",
+    "keywords": "affiliés",
+    "description": "Affiliés Commerçants",
+
+    "pendingPayout": "Paie en attente :",
+
+    "filters": {
+        "times": {
+            "LIFETIME": "DURÉE DE VIE",
+            "LAST_WEEK": "LA SEMAINE DERNIÈRE",
+            "LAST_MONTH": "LE MOIS DERNIER",
+            "LAST_YEAR": "L'ANNÉE DERNIÈRE"
+        },
+        "types": {
+            "REFERRALS": "RÉFÉRENCES",
+            "COMMISSIONS": "COMMISSIONS",
+            "PAYOUTS": "PAIEMENTS"
+        }
+    },
+
+    "table": {
+        "headers": {
+            "name": "Nom",
+            "id": "#",
+            "signUpDate": "Date D'inscription",
+            "totalOrders": "Total des Commandes",
+            "campaign": "Campagne",
+            "commission": "Commission",
+            "status": "Statut",
+            "date": "Date",
+            "amount": "Montant"
+        },
+        "noDataTableMessage": "Oh-oh, nous n'avons rien trouvé!"
+    },
+
+    "affiliateLink": {
+        "title": "Lien D'affiliation",
+        "description1": "Commencez à gagner dès maintenant en sélectionnant une campagne et en partageant votre lien de parrainage unique ci-dessous. Vos paiements s'accumulent à chaque parrainage réussi. Partageons!",
+        "description2": "Commencez à gagner maintenant en partageant votre lien de parrainage unique ci-dessous. Vos paiements s'accumulent à chaque parrainage réussi. Partageons!",
+        "description3": "Pour rejoindre notre programme d'affiliation et commencer à gagner grâce aux parrainages, veuillez nous contacter pour vous inscrire.",
+        "campaignLabels": {
+            "default": "Défaut",
+            "campaign_1": "Campagne 1",
+            "campaign_2": "Campagne 2",
+            "campaign_3": "Campagne 3"
+        },
+
+        "inputTextIdLabel": "ID D'affilié",
+        "inputSelectLabel": "Campagne",
+        "inputTextLinkLabel": "Lien"
+    },
+
+    "btcPayout": {
+        "title": "Gérez votre adresse de paiement BTC",
+        "description": "L'adresse BTC est requise pour recevoir les paiements de commissions.",
+        "buttonSaveLabel": "SAUVEGARDER",
+        "inputLabel": "BTC Adresse"
+    },
+
+    "board": {
+        "referrals": {
+            "title": "Références",
+            "conversionRate": "Taux de conversion:",
+            "visits": "Visites:",
+            "purchases": "Achats:"
+        },
+        "commissions": {
+            "title": "Commissions",
+            "rate": "Taux:",
+            "sales": "Ventes:",
+            "discount": "Rabais:"
+        },
+        "payouts": {
+            "title": "Paiements"
+        }
+    }
+}

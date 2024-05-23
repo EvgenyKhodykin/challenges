@@ -1,0 +1,182 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow: hidden;
+    height: 380px;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-color-15);
+    box-shadow: var(--shadow-color-neutral100);
+    transition:
+        border-color 0.3s ease-in,
+        box-shadow 0.3s ease-in,
+        transform 0.3s ease-in;
+
+    &:hover {
+        box-shadow: var(--shadow-color-neutral100);
+    }
+
+    &.CardModalOpened {
+        box-shadow: var(--shadow-color-neutral300);
+    }
+}
+
+.Footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 115px;
+    background-color: var(--neutral-color-0);
+    padding: 8px 15px 11px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    .Left {
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding-right: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        max-width: calc(100% - 50px);
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+
+    .Right {
+        flex-grow: 0;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+.Tags {
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 90%;
+    position: relative;
+
+    span {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 0.6875rem;
+        line-height: 1.4em;
+        text-align: center;
+        color: var(--text-color-primary);
+        padding: 4px 8px;
+        background-color: var(--neutral-color-70);
+        border-radius: 6px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+
+        &:first-child {
+            background-color: var(--info-color-background);
+        }
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 30px;
+        background-image: var(--gradient-color-fade);
+    }
+}
+
+.Id {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.4em;
+    text-align: left;
+    color: var(--text-color-quaternary);
+}
+
+.StartingAmount {
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 1.4em;
+    text-align: left;
+    color: var(--text-color-primary);
+
+    sup {
+        font-weight: 400;
+        font-size: 0.6875rem;
+    }
+}
+
+.ButtonCredentials {
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--neutral-color-50);
+    cursor: pointer;
+
+    .IconCredentials {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.ButtonDetails {
+    border: none;
+    background-color: transparent;
+    width: 44px;
+    height: 31px;
+    padding: 5px 15px 5px 0;
+    cursor: pointer;
+}
+
+.Preview {
+    height: 100px;
+    border-radius: 8px !important;
+    padding: 0px 10px !important;
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        border-radius: 16px;
+        box-shadow: var(--shadow-color-neutral100);
+        transform: translateY(0);
+
+        .ButtonDetails {
+            transition: opacity 0.3s ease-in;
+            opacity: 0;
+        }
+
+        &:hover {
+            box-shadow: var(--shadow-color-neutral200);
+            transform: translateY(-3px);
+
+            .ButtonDetails {
+                opacity: 1;
+            }
+        }
+    }
+}

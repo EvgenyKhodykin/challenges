@@ -1,0 +1,144 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    display: block;
+}
+
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.Top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.Middle {
+    text-align: right;
+}
+
+.Bottom {
+    text-align: right;
+}
+
+.Info {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-align: left;
+    color: var(--text-color-primary);
+}
+
+.Name {
+    color: var(--neutral-color-90);
+}
+
+.Account {
+    font-size: 1.5rem;
+    line-height: 1.4em;
+    font-weight: 600;
+
+    sup {
+        font-size: 0.875rem;
+        line-height: 1em;
+    }
+}
+
+.Social {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-align: right;
+    color: var(--neutral-color-80);
+
+    .Button {
+        margin-left: $grid-gutter * 0.5;
+        color: var(--neutral-color-80);
+        transition: color 0.05s linear;
+
+        &:hover {
+            color: var(--text-color-primary);
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Info {
+        font-size: 0.9375rem;
+    }
+
+    .Country {
+        margin-left: $grid-gutter * 0.5;
+        margin-right: $grid-gutter * 0.5;
+    }
+
+    .Account {
+        font-size: 1.375rem;
+
+        sup {
+            font-size: 0.75rem;
+        }
+    }
+
+    .Social {
+        font-size: 0.9375rem;
+    }
+
+    .Payouts {
+        .Title {
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-right: $grid-gutter * 0.5;
+        }
+        .Icon {
+            display: inline-block;
+            padding: 2px;
+            border-radius: 4px;
+            line-height: 0;
+            color: var(--neutral-color-0);
+            background-color: var(--text-color-primary);
+            margin-right: 10px;
+        }
+
+        .Text {
+            font-size: 1.0625rem;
+            font-weight: 600;
+            line-height: 1.4em;
+            text-align: left;
+            color: var(--text-color-primary);
+        }
+
+        .Amount {
+            font-weight: 600;
+            font-size: 1.97125rem;
+            line-height: 1.4em;
+
+            sup {
+                font-size: 1rem;
+                line-height: 1em;
+            }
+        }
+    }
+}

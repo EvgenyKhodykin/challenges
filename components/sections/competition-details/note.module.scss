@@ -1,0 +1,51 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.Left {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-right: $grid-gutter * 0.33;
+}
+
+.Right {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    p {
+        color: var(--text-color-primary);
+        font-size: 1.0625rem;
+        font-weight: 400;
+        line-height: 1.58em;
+        margin-top: 0;
+        margin-bottom: $grid-gutter * 0.19;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.Icon {
+    color: var(--text-color-primary);
+    font-size: 24px;
+}
+
+@include media-breakpoint-up(md) {
+    .Left {
+        padding-right: $grid-gutter * 0.5;
+    }
+
+    .Right {
+        p {
+            font-size: 1rem;
+            line-height: 1.375em;
+        }
+    }
+}

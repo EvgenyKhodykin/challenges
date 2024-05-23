@@ -1,0 +1,78 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--backdrop-color-primary);
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+}
+
+.Content {
+    background-color: var(--neutral-color-0);
+    z-index: 200;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 45px;
+    width: 100vw;
+    overflow: hidden;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    & > div:first-child {
+        min-height: 72px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+}
+
+.Close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+@include media-breakpoint-up(md) {
+    .Content {
+        top: 60px;
+        left: -50%;
+        right: -50%;
+        bottom: initial;
+        margin: 0 auto;
+        width: 800px;
+        min-height: 794px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Content {
+        width: 1000px;
+        flex-direction: row;
+
+        & > div:first-child {
+            height: initial;
+            width: 267px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .Content {
+        width: 1100px;
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "title": "Profil",
+    "keywords": "profil",
+    "description": "Page de Profil",
+
+    "menu": {
+        "toggle": {
+            "profile": "PROFIL",
+            "account-security": "SÉCURITÉ DU COMPTE",
+            "purchase-history": "HISTORIQUE DES ACHATS"
+        }
+    },
+
+    "personalInfo": {
+        "form": {
+            "title": "Informations personnelles",
+            "error": "Échec de la mise à jour de vos informations personnelles",
+            "success": "Vos informations personnelles ont été mises à jour avec succès",
+            "firstName": {
+                "label": "Prénom",
+                "required": "Veuillez entrer votre prénom"
+            },
+            "lastName": {
+                "label": "Nom de famille",
+                "required": "Veuillez entrer votre nom de famille"
+            },
+            "nickname": {
+                "label": "Surnom (optionnel)",
+                "helper": "Votre pseudonyme ne peut pas comporter d'espaces vides ou de points."
+            }
+        }
+    },
+
+    "socialMedia": {
+        "form": {
+            "title": "Réseaux Sociaux",
+            "error": "Échec de la mise à jour de vos liens sur les réseaux sociaux",
+            "success": "Vos liens sur les réseaux sociaux ont été mis à jour avec succès",
+            "instagram": {
+                "label": "Votre profil Instagram"
+            },
+            "twitter": {
+                "label": "Votre compte Twitter"
+            }
+        }
+    },
+
+    "contactDetails": {
+        "form": {
+            "title": "Détails du Contact",
+            "phoneNumber": {
+                "label": "Téléphone"
+            },
+            "country": {
+                "label": "Pays"
+            },
+            "mainAddress": {
+                "label": "Rue et numéro de maison"
+            },
+            "additionalAddress": {
+                "label": "Adresse supplémentaire (facultatif)"
+            },
+            "postCode": {
+                "label": "Code Postal"
+            },
+            "city": {
+                "label": "Ville"
+            },
+            "checkbox": {
+                "label": "Je souhaite recevoir les newsletters par Email"
+            }
+        }
+    },
+
+    "personalPreferences": {
+        "form": {
+            "title": "Informations Personnelles",
+            "language": {
+                "label": "Langue"
+            },
+            "currency": {
+                "label": "Devise"
+            }
+        }
+    },
+
+    "saveButton": "SAUVEGARDER"
+}

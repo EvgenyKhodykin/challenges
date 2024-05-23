@@ -1,0 +1,133 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    padding: $grid-gutter * 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+
+    .Graph {
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 100%;
+        padding-left: $grid-gutter * 1.5;
+        padding-right: $grid-gutter * 1.5;
+    }
+}
+
+.Bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.Title {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .Icon {
+        display: inline-block;
+        line-height: 0;
+        color: var(--text-color-primary);
+        background-color: transparent;
+        margin-right: 10px;
+    }
+
+    .Text {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        text-align: left;
+        color: var(--text-color-primary);
+    }
+}
+
+.CurrentDate {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-align: right;
+    color: var(--text-color-primary);
+}
+
+.Ends,
+.TimeLeft {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.4em;
+    color: var(--text-color-secondary);
+    text-align: center;
+
+    span {
+        font-weight: 600;
+        color: var(--text-color-primary);
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        align-items: stretch;
+    }
+
+    .Bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .Title {
+        .Text {
+            font-size: 0.9375rem;
+        }
+    }
+
+    .CurrentDate {
+        font-size: 0.9375rem;
+    }
+
+    .Ends,
+    .TimeLeft {
+        font-size: 0.8125rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Top {
+        flex-wrap: nowrap;
+        padding-bottom: $grid-gutter * 0.555;
+        align-items: flex-start;
+
+        .Graph {
+            margin-left: $grid-gutter;
+            width: initial;
+            padding-left: $grid-gutter * 0.6;
+            padding-right: $grid-gutter * 0.6;
+        }
+    }
+
+    .Title {
+        padding-top: 8px;
+    }
+}

@@ -1,0 +1,24 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.ContentPlaceholder {
+    padding: 20px;
+    min-height: 580px;
+}
+
+.Header {
+    padding-bottom: $grid-gutter * 0.5;
+}
+
+@include media-breakpoint-up(md) {
+    .ContentPlaceholder {
+        padding-left: 42px;
+        padding-right: 42px;
+        min-height: 640px;
+    }
+
+    .Header {
+        margin-bottom: 25px;
+        padding-bottom: initial;
+    }
+}

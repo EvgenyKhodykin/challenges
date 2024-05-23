@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Plan {
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--neutral-color-0);
+}
+
+.Payment {
+    box-shadow: none;
+    border: none;
+    background-color: var(--neutral-color-40);
+    margin-top: $grid-gutter * 0.5;
+}
+
+@include media-breakpoint-up(lg) {
+    .Root {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .Plan {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .Payment {
+        margin-top: initial;
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin-left: $grid-gutter * 0.5;
+        width: 526px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .Payment {
+        width: 626px;
+    }
+}

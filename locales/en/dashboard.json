@@ -1,0 +1,95 @@
+{
+    "title": "Dashboard",
+    "keywords": "dashboard",
+    "description": "Traders Dashboard",
+
+    "filters": {
+        "status": {
+            "all": "ALL",
+            "funded": "FUNDED",
+            "active": "ACTIVE",
+            "past": "PAST"
+        },
+        "amount": {
+            "profit": "PROFIT",
+            "balance": "BALANCE",
+            "amount-to-goal": "AMOUNT TO GOAL"
+        }
+    },
+
+    "sidebar": {
+        "filters": "Filters",
+        "currency": "Currency",
+        "challengeType": "Challenge type",
+        "amount": "Amount"
+    },
+
+    "challengeTiles": {
+        "status": {
+            "passed": "Passed",
+            "failed": "Failed",
+            "ongoing": "Ongoing"
+        },
+
+        "newChallengeTile": {
+            "title": "NEW CHALLENGE"
+        },
+
+        "pendingTile": {
+            "messagePart1": "The account is being created.",
+            "messagePart2": "It will be ready shortly.",
+            "options": {
+                "setupChallenge": "1. Setup challenge.",
+                "setupAccess": "2. Setup access.",
+                "setupAccount": "3. Setup account."
+            }
+        },
+
+        "buttonRestart": "Restart",
+
+        "goals": {
+            "title": "GOALS",
+            "toTheGoal": "to the goal",
+            "tradingDays_one": "{{count}} trading day",
+            "tradingDays_other": "{{count}} trading days",
+            "tradingDaysToTheGoal_one": "{{count}} trading day to the goal",
+            "tradingDaysToTheGoal_other": "{{count}} trading days to the goal"
+        },
+
+        "restrictions": {
+            "title": "RESTRICTIONS",
+            "todayLoss": "today's permitted loss",
+            "maxLoss": "max permitted loss"
+        },
+
+        "failed": {
+            "profitNotReached": "profit is not reached",
+            "todayLossExceeded": "today's permitted loss exceeded",
+            "maxLossExcceded": "max permitted loss exceeded",
+            "message": "Restart the challenge"
+        },
+
+        "tooltips": {
+            "targetAmountLeftToEarn": "Target amount left to earn",
+            "tradingDays": "Trading days",
+            "todayPermittedLoss": "Today permitted loss",
+            "maxPermittedLoss": "Max permitted loss"
+        },
+        "foreGroundLabels": {
+            "amountToGoal": "Amount to Goal",
+            "balance": "Balance",
+            "currentProfit": "Current Profit"
+        },
+
+        "credentials": {
+            "title": "CREDENTIALS",
+            "challengeId": "Challenge ID",
+            "login": "Login",
+            "server": "Server",
+            "message": "You will receive an email with your Investor Password",
+            "resetPassword": "RESET PASSWORD"
+        }
+    },
+
+    "noResultsMessage": "No {{status}} challenges available"
+}

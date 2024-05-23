@@ -1,0 +1,21 @@
+{
+    "title": "Se Connecter",
+    "keywords": "seconnecter",
+    "description": "Formulaire de connexion",
+
+    "form": {
+        "error": "Échec de la connexion",
+        "email": {
+            "label": "Adresse e-mail",
+            "invalid": "Veuillez vérifier que l'adresse e-mail que vous avez saisie est correcte.",
+            "required": "Veuillez saisir votre adresse e-mail."
+        },
+        "password": {
+            "label": "Saisissez votre mot de passe",
+            "required": "Le mot de passe est requis"
+        }
+    },
+    "newUser": "Vous n'avez pas encore de compte ?",
+    "forgotPassword": "Vous avez oublié votre mot de passe ?",
+    "rememberMe": "Mémoriser mon adresse e-mail"
+}

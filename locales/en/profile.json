@@ -1,0 +1,88 @@
+{
+    "title": "Profile",
+    "keywords": "profile",
+    "description": "Profile Page",
+
+    "menu": {
+        "toggle": {
+            "profile": "PROFILE",
+            "account-security": "ACCOUNT SECURITY",
+            "purchase-history": "PURCHASE HISTORY"
+        }
+    },
+
+    "personalInfo": {
+        "form": {
+            "title": "Personal Information",
+            "error": "Failed to update your personal information",
+            "success": "Your personal information was updated successfully",
+            "firstName": {
+                "label": "First Name",
+                "required": "Please enter your first name"
+            },
+            "lastName": {
+                "label": "Last Name",
+                "required": "Please enter your last name"
+            },
+            "nickname": {
+                "label": "Nickname (optional)",
+                "helper": "Your nickname can't include empty spaces or periods."
+            }
+        }
+    },
+
+    "socialMedia": {
+        "form": {
+            "title": "Social Media",
+            "error": "Failed to update your social media links",
+            "success": "Your social media links were updated successfully",
+            "instagram": {
+                "label": "Your Instagram Profile"
+            },
+            "twitter": {
+                "label": "Your Twitter Account"
+            }
+        }
+    },
+
+    "contactDetails": {
+        "form": {
+            "title": "Contact Details",
+            "phoneNumber": {
+                "label": "Phone"
+            },
+            "country": {
+                "label": "Country"
+            },
+            "mainAddress": {
+                "label": "Street and house number"
+            },
+            "additionalAddress": {
+                "label": "Additional address (optional)"
+            },
+            "postCode": {
+                "label": "Post Code"
+            },
+            "city": {
+                "label": "Town / City"
+            },
+            "checkbox": {
+                "label": "I would like to receive the newsletters via Email"
+            }
+        }
+    },
+
+    "personalPreferences": {
+        "form": {
+            "title": "Personal Info",
+            "language": {
+                "label": "Language"
+            },
+            "currency": {
+                "label": "Currency"
+            }
+        }
+    },
+
+    "saveButton": "SAVE CHANGES"
+}

@@ -1,0 +1,10 @@
+.Root {
+    border-color: var(--success-color-main);
+    background: var(--gradient-color-primary);
+}
+
+.DateLabelPreview {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

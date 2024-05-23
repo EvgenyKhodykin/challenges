@@ -1,0 +1,112 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    margin-top: $grid-gutter;
+}
+
+.TH,
+.TD {
+    padding: $grid-gutter * 0.25;
+    font-size: 0.875rem;
+
+    &:last-child {
+        text-align: right;
+    }
+}
+
+.TH {
+    &:last-child {
+        padding-right: $grid-gutter;
+    }
+}
+
+.TH {
+    font-weight: 600;
+
+    &:first-child {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.HeadingName {
+    margin-left: $grid-gutter * 1.25;
+}
+
+.LineItem {
+    border-top: 1px solid var(--neutral-color-50);
+    &:hover {
+        cursor: pointer;
+        background-color: var(--neutral-color-50);
+    }
+}
+
+.Rank {
+    display: flex;
+    align-items: center;
+}
+
+.RankChangeBadge {
+    display: flex;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    margin-right: $grid-gutter * 0.333;
+}
+
+.RankNumber {
+    font-weight: 500;
+    padding-right: $grid-gutter * 0.5;
+}
+
+.RankBadge {
+    display: none;
+}
+
+.Gain {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ArrowForward {
+    width: $grid-gutter;
+    padding-left: $grid-gutter * 0.25;
+}
+
+@include media-breakpoint-up(md) {
+    .TH {
+        &:last-child {
+            padding-right: $grid-gutter * 2;
+        }
+    }
+    .TD {
+        font-size: 1rem;
+    }
+    .HeadingName {
+        margin-left: $grid-gutter * 3.5;
+    }
+
+    .RankBadge {
+        display: flex;
+        justify-content: center;
+        margin: 0 $grid-gutter;
+    }
+
+    .ArrowForward {
+        width: $grid-gutter * 1.5;
+        padding-left: $grid-gutter * 0.5;
+    }
+
+    .RankNumber {
+        min-width: 1rem;
+        font-size: 1.0625rem;
+        padding-right: 0;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .HeadingName {
+        margin-left: $grid-gutter * 3.5;
+    }
+}

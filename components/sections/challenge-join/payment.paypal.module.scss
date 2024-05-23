@@ -1,0 +1,30 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    padding-left: $grid-gutter;
+    padding-right: $grid-gutter;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Text {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: $grid-gutter * 0.15;
+}
+
+.Icon {
+    color: var(--neutral-color-0);
+    display: inline-block;
+    margin-left: 4px;
+}
+
+@include media-breakpoint-up(lg) {
+    .Root {
+        padding-left: ($grid-gutter * 0.5) + 43;
+        padding-right: $grid-gutter * 0.5;
+    }
+}

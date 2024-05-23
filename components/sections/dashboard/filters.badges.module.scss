@@ -1,0 +1,45 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    display: flex;
+}
+
+.ClearAll {
+    border: none;
+    padding: 0;
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        min-height: 44px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .Badge {
+        margin-right: 10px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    .ClearAll {
+        margin-left: 10px;
+        font-size: 0.8125rem;
+        font-weight: 600;
+        color: var(--text-color-primary);
+        text-decoration: underline;
+        cursor: pointer;
+        background-color: transparent;
+        line-height: 2.3em;
+        margin-top: 7px;
+        margin-bottom: 7px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

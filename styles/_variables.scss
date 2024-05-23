@@ -1,0 +1,63 @@
+$grid-breakpoints: (
+    xs: 0,
+    sm: 600px,
+    md: 900px,
+    lg: 1200px,
+    xl: 1536px,
+) !default;
+
+$color-layout-desktop-border: var(--neutral-color-50);
+
+$grid-gutter: 36px;
+
+$header-height-mobile: 54px;
+$header-height-desktop: 80px;
+$header-profile-breakpoints-sizes: (
+    xs: 40px,
+    sm: 40px,
+    md: 44px,
+    lg: 44px,
+    xl: 44px,
+) !default;
+
+// Buttons
+$button-breakpoints-heights: (
+    xs: 56px,
+    sm: 56px,
+    md: 52px,
+    lg: 52px,
+    xl: 52px,
+) !default;
+$button-breakpoints-min-width: (
+    xs: 250px,
+    sm: 250px,
+    md: 220px,
+    lg: 220px,
+    xl: 220px,
+) !default;
+
+// Pages
+$public-pages-links-breakpoints-sizes: (
+    xs: 1.0625rem,
+    sm: 1.0625rem,
+    md: 1rem,
+    lg: 1rem,
+    xl: 1rem,
+) !default;
+
+$public-pages-links-breakpoints-line-heights: (
+    xs: 1.6em,
+    sm: 1.6em,
+    md: 1.4em,
+    lg: 1.4em,
+    xl: 1.4em,
+) !default;
+
+// Cards
+$card-border-radius-desktop: $grid-gutter * 0.44444; // 16px
+$card-border-radius-mobile: $grid-gutter * 0.22222; // 8px
+$card-spacing: $grid-gutter * 0.44444;
+
+// Main
+$main-padding-desktop: $grid-gutter * 0.44444;
+$main-padding-mobile: $grid-gutter * 0.5;

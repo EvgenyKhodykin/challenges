@@ -1,0 +1,223 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    padding: 0;
+    overflow: hidden;
+}
+
+.Preview {
+    display: block;
+    width: 100%;
+    padding: $grid-gutter * 0.5 16px;
+    .Heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .Expand {
+            font-size: 1.875rem;
+        }
+    }
+
+    .Body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.Details {
+    padding: $grid-gutter * 0.5 16px;
+}
+
+.Top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Middle {
+    overflow: hidden;
+    width: 100%;
+    padding: $grid-gutter * 0.5 0;
+}
+
+.Bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Title {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .Icon {
+        display: inline-block;
+        padding: 2px;
+        border-radius: 4px;
+        line-height: 0;
+        background-color: var(--text-color-primary);
+        margin-right: 10px;
+
+        &.Success {
+            background-color: var(--success-color-main);
+        }
+
+        &.Failure {
+            background-color: var(--error-color-main);
+        }
+
+        .Chart {
+            color: var(--neutral-color-0);
+        }
+    }
+
+    .Text {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        text-align: left;
+        color: var(--text-color-primary);
+    }
+
+    .RealizedProfit {
+        display: inline-block;
+        margin-left: 10px;
+
+        span {
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 1.4em;
+            text-align: left;
+            color: var(--text-color-primary);
+        }
+
+        sup {
+            font-size: 0.8125rem;
+            font-weight: 400;
+            color: var(--text-color-primary);
+        }
+
+        &.Positive {
+            span {
+                color: var(--success-color-main);
+
+                &::before {
+                    content: '+';
+                    display: inline;
+                }
+            }
+        }
+
+        &.Negative {
+            span {
+                color: var(--error-color-main);
+            }
+        }
+    }
+}
+
+.Percent {
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: right;
+    font-size: 1.25rem;
+    line-height: 1.4em;
+    font-weight: 600;
+    color: var(--text-color-primary);
+
+    sup {
+        font-weight: 400;
+        font-size: 0.6875rem;
+        line-height: 1.4em;
+    }
+}
+
+.ToGoal {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 1.0625rem;
+    line-height: 1.4em;
+    color: var(--text-color-tertiary);
+    text-align: center;
+
+    .Amount {
+        font-weight: 600;
+        color: var(--text-color-primary);
+
+        sup {
+            font-size: 0.55rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.GoalPercent {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: var(--text-color-tertiary);
+    text-align: center;
+}
+
+.Graph {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        padding: $grid-gutter * 0.5;
+    }
+
+    .Title {
+        .RealizedProfit {
+            span {
+                font-size: 1.0625rem;
+            }
+
+            sup {
+                font-size: 0.625rem;
+            }
+        }
+    }
+
+    .ToGoal {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.9375rem;
+    }
+
+    .GoalPercent {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.8125rem;
+    }
+
+    .Graph {
+        margin: 0 auto;
+        width: 100%;
+    }
+}

@@ -1,0 +1,102 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    padding: $grid-gutter * 0.5;
+    overflow: hidden;
+}
+
+.Top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Middle {
+    overflow: hidden;
+    width: 100%;
+    padding: $grid-gutter * 0.7 0;
+    font-size: 1.9375rem;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    text-align: center;
+    line-height: 1.41em;
+}
+
+.Bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Title {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .Icon {
+        display: inline-block;
+        padding: 2px;
+        border-radius: 4px;
+        line-height: 0;
+        color: var(--neutral-color-0);
+        background-color: var(--text-color-primary);
+        margin-right: 10px;
+    }
+
+    .Text {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        text-align: left;
+        color: var(--text-color-primary);
+    }
+}
+
+.Percent {
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: right;
+    line-height: 1.4em;
+    font-size: 1.0625rem;
+    color: var(--text-color-secondary);
+    font-weight: 400;
+
+    span {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--text-color-primary);
+    }
+
+    sup {
+        font-weight: 400;
+        font-size: 0.9375rem;
+        line-height: 1em;
+        color: var(--text-color-primary);
+    }
+}
+
+.Purchases,
+.Visits {
+    font-weight: 400;
+    font-size: 1.0625rem;
+    line-height: 1.4em;
+    color: var(--text-color-secondary);
+    text-align: center;
+
+    span {
+        font-weight: 600;
+        color: var(--text-color-primary);
+    }
+}

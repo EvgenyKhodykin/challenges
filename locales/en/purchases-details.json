@@ -1,0 +1,31 @@
+{
+    "title": "Purchase Receipt",
+    "keywords": "purchase receipt",
+    "description": "Purchase Receipt",
+
+    "receipt": {
+        "title": "Receipt",
+        "printButtonLabel": "PRINT",
+        "downloadButtonLabel": "DOWNLOAD",
+
+        "message": {
+            "part1": "If you have any questions about the receipt please contact our",
+            "part2": "support team"
+        },
+
+        "soldTo": "Sold To:",
+        "date": "Date:",
+        "orderNumber": "Order #:",
+        "subtotal": "Subtotal:",
+        "discount": "Discount:",
+        "total": "Total:",
+        "totalPaid": "Total Paid:",
+
+        "tableHeaders": {
+            "item": "Item",
+            "quantity": "Quantity",
+            "unitPrice": "Unit Price",
+            "amount": "Amount"
+        }
+    }
+}

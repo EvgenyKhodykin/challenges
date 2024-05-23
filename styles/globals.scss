@@ -1,0 +1,171 @@
+@import './variables';
+@import './mixins';
+
+@font-face {
+    font-family: Raleway;
+    src: url('../public/fonts/Raleway-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('../public/fonts/Raleway-BoldItalic.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('../public/fonts/Raleway-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('../public/fonts/Raleway-SemiBoldItalic.ttf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('../public/fonts/Raleway-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('../public/fonts/Raleway-Italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../public/fonts/Roboto-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../public/fonts/Roboto-BlackItalic.ttf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../public/fonts/Roboto-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../public/fonts/Roboto-BoldItalic.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../public/fonts/Roboto-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../public/fonts/Roboto-MediumItalic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../public/fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../public/fonts/Roboto-Italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../public/fonts/Roboto-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../public/fonts/Roboto-LightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../public/fonts/Roboto-Thin.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../public/fonts/Roboto-ThinItalic.ttf');
+    font-weight: 100;
+    font-style: italic;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-color-primary);
+    overscroll-behavior: none;
+    background-color: var(--neutral-color-0);
+}
+
+a {
+    color: var(--primary-color-main);
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.yaxis {
+    border: 1px solid black;
+}
+
+button {
+    font-family: 'Roboto';
+}
+
+@media print {
+    body,
+    html {
+        height: 100%;
+        width: 100%;
+        overflow: visible;
+    }
+}
+
+@import './charts';

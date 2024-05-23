@@ -1,0 +1,60 @@
+@import '../../styles/variables';
+
+.Root {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Previous,
+.Next {
+    color: var(--neutral-color-90);
+
+    &[class*='Mui-disabled'] {
+        color: var(--neutral-color-70);
+    }
+}
+
+.Previous {
+    margin-right: $grid-gutter * 0.5;
+}
+
+.Next {
+    margin-left: $grid-gutter * 0.5;
+}
+
+.Text {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-align: center;
+    color: var(--text-color-tertiary);
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.Button {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-align: center;
+    color: var(--text-color-tertiary);
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease-in;
+
+    &:hover {
+        color: var(--text-color-primary);
+    }
+}
+
+.Current {
+    color: var(--text-color-primary);
+}

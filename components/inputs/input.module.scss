@@ -1,0 +1,92 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    & > div {
+        border-radius: 8px;
+        border: 1px solid var(--neutral-color-70);
+        overflow: hidden;
+        &::after,
+        &::before {
+            display: none;
+        }
+        &[class*='Mui-error'] {
+            border-color: var(--error-color-border);
+        }
+        &[class*='Mui-focused'] {
+            border-color: var(--info-color-focus);
+        }
+        &[class*='Mui-disabled'] {
+            border-color: var(--neutral-color-70);
+            background-color: var(--neutral-color-40) !important;
+        }
+    }
+
+    input {
+        font-size: 1.25rem;
+        height: 1em;
+        color: var(--text-color-primary) !important;
+
+        &[class*='Mui-disabled'] {
+            color: var(--text-color-tertiary) !important;
+            -webkit-text-fill-color: var(--text-color-tertiary);
+        }
+    }
+
+    label {
+        &[data-shrink='false'] {
+            color: var(--text-color-tertiary);
+        }
+        &[data-shrink='true'] {
+            color: var(--text-color-quaternary);
+        }
+        &[class*='Mui-error'] {
+            color: var(--error-color-main);
+        }
+        &[class*='Mui-focused'] {
+            color: var(--info-color-focus);
+        }
+    }
+
+    p[class*='Mui-error'] {
+        color: var(--error-color-main) !important;
+    }
+}
+
+.CheckMark {
+    path {
+        fill: var(--secondary-color-main);
+    }
+}
+
+.HelperText {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-align: left;
+    color: var(--text-color-tertiary);
+    margin-top: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        input {
+            font-size: 1.0625rem;
+            padding-top: 31px;
+            padding-bottom: 15px;
+        }
+
+        label {
+            line-height: 2em;
+        }
+    }
+
+    .HelperText {
+        font-size: 0.8125rem;
+        margin-top: 7px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+}

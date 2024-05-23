@@ -1,0 +1,9 @@
+@import '../../../styles/variables';
+
+.Root {
+    background: var(--neutral-color-50);
+
+    &.RecentlyCreated {
+        border: 1px solid var(--secondary-color-main);
+    }
+}

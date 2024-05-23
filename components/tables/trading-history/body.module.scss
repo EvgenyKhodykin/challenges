@@ -1,0 +1,39 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Body {
+    border-bottom: 1px solid var(--neutral-color-60);
+}
+
+.Cell {
+    border-bottom: none;
+    padding: 10px;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: var(--text-color-tertiary);
+
+    &:first-child {
+        padding-left: $grid-gutter * 0.5;
+    }
+
+    &:last-child {
+        padding-right: $grid-gutter * 0.5;
+    }
+}
+
+.Empty {
+    padding: 100px $grid-gutter;
+    font-size: 1rem;
+    line-height: 1.4em;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    text-align: center;
+}
+
+.Colored {
+    color: var(--success-color-main);
+    &.Negative {
+        color: var(--error-color-main);
+    }
+}

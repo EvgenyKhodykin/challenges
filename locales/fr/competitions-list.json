@@ -1,0 +1,48 @@
+{
+    "title": "Compétitions",
+    "keywords": "compétitions",
+    "description": "Compétitions",
+
+    "filters": {
+        "status": {
+            "all": "TOUT",
+            "upcoming": "A VENIR",
+            "active": "ACTIF",
+            "past": "PASSÉ"
+        }
+    },
+
+    "cards": {
+        "active": {
+            "status": "Actif"
+        },
+        "upcoming": {
+            "status": "A venir"
+        },
+        "closed": {
+            "status": "Fermé"
+        }
+    },
+
+    "emptyList": {
+        "message": "Pas de concours {{status}} disponibles",
+        "status": {
+            "active": "actif",
+            "upcoming": "a venir",
+            "past": "passé",
+            "all": ""
+        }
+    },
+
+    "prizeLabel": "Le prix de la place est",
+    "startsOn": "Commence le",
+    "startsIn": "Commence dans",
+    "buttonStandings": "Classement",
+    "buttonRegister": "REGISTRE",
+    "alertMessageSuccess": "Inscription réussie!",
+    "alertServerError": "Échec de l'inscription!",
+    "alertAlreadyRegistered": "Déjà enregistré. Vous ne pouvez pas vous inscrire à ce défi plus d'une fois!",
+    "registeredLabel": "INSCRIT",
+    "registrationEnds": "L'inscription se termine dans:",
+    "registrationEnded": "L'inscription est terminée:"
+}

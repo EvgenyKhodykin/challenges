@@ -1,0 +1,34 @@
+{
+    "title": "Historique d'achat",
+    "keywords": "historique d'achat",
+    "description": "Historique d'achat",
+
+    "purchase": {
+        "title": "Achat",
+
+        "socialShareLabel": "Recommander le défi:",
+
+        "paid": {
+            "status": "Payé",
+            "buttonLabel": "REÇU"
+        },
+
+        "underpaid": {
+            "status": "Sous-payés",
+            "buttonLabel": "PAIEMENT COMPLET",
+            "remainingAmount": "Montant restant:"
+        },
+
+        "expired": {
+            "status": "Expiré"
+        },
+
+        "failed": {
+            "order": "Commande",
+            "paid": "Payé:",
+            "completePaymentButtonLabel": "PAIEMENT COMPLET"
+        },
+
+        "paidAmountLabel": "Payé:"
+    }
+}

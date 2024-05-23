@@ -1,0 +1,23 @@
+{
+    "title": "S'inscrire",
+    "keywords": "s'inscrire",
+    "description": "Formulaire d'inscription",
+
+    "form": {
+        "error": "Échec de l'envoi de l'email de vérification.",
+        "success": "Nous avons envoyé un courriel de vérification avec les instructions d'inscription. Veuillez vérifier votre boîte de réception.",
+        "email": {
+            "label": "Adresse e-mail",
+            "invalid": "Veuillez vérifier que l'adresse e-mail que vous avez saisie est correcte.",
+            "required": "Veuillez saisir votre adresse e-mail."
+        }
+    },
+    "alreadyRegistered": "Vous avez déjà un compte?",
+    "step1": "Informations de base",
+    "step2": "Vérifiez l'Email",
+    "step3": "Détails",
+    "checkInbox": "Veuillez vérifier votre boîte de réception.",
+    "emailNotReceived": "Je n'ai pas reçu l'e-mail.",
+    "resendEmailButton": "Renvoyer le courriel",
+    "getStartedButton": "Commencer"
+}

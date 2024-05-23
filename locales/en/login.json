@@ -1,0 +1,21 @@
+{
+    "title": "Login",
+    "keywords": "login",
+    "description": "Login form",
+
+    "form": {
+        "error": "Failed to sign in",
+        "email": {
+            "label": "Email",
+            "invalid": "Invalid email",
+            "required": "Email is required"
+        },
+        "password": {
+            "label": "Password",
+            "required": "Password is required"
+        }
+    },
+    "newUser": "New User?",
+    "forgotPassword": "Forgot password?",
+    "rememberMe": "Remember me"
+}

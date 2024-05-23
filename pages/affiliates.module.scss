@@ -1,0 +1,32 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.SectionLink {
+    margin-bottom: $grid-gutter * 0.5;
+    padding-left: $grid-gutter * 0.5;
+    padding-right: $grid-gutter * 0.5;
+}
+
+.SectionPayoutAddress {
+    margin-bottom: $grid-gutter;
+    padding-left: $grid-gutter * 0.5;
+    padding-right: $grid-gutter * 0.5;
+}
+
+@include media-breakpoint-up(md) {
+    .Main {
+        margin: $grid-gutter;
+        padding: $grid-gutter * 0.5;
+    }
+    .SectionLink {
+        margin-bottom: initial;
+        padding-left: initial;
+        padding-right: initial;
+    }
+
+    .SectionPayoutAddress {
+        margin-bottom: initial;
+        padding-left: initial;
+        padding-right: initial;
+    }
+}

@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    background-color: var(--neutral-color-20);
+    margin-bottom: $grid-gutter;
+    margin-top: $grid-gutter * 0.66;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.Title {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.4em;
+    color: var(--title-color-primary);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        margin: 30px $grid-gutter 70px;
+        padding: 18px;
+    }
+
+    .Title {
+        font-size: 1.0625rem;
+        margin-bottom: 15px;
+    }
+}

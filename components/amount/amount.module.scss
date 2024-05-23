@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Amount {
+    font-weight: 500;
+    font-size: inherit;
+    sup {
+        font-size: 0.666em;
+    }
+}
+
+.AmountNumber {
+    display: inline-block;
+    margin: 0 2px;
+    font-size: inherit;
+}
+
+.AmountCurrency {
+    font-weight: 400;
+    font-size: inherit;
+}

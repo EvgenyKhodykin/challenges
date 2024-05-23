@@ -1,0 +1,50 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Item {
+    display: block;
+    text-align: left;
+    padding: 0 0 16px;
+}
+
+.Link {
+    color: var(--text-color-secondary);
+    text-decoration: underline;
+    font-size: 1rem;
+    line-height: 2.5em;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.Active {
+    text-decoration: none;
+}
+
+@include media-breakpoint-up(md) {
+    .Navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Item {
+        padding: 0 0 0 15px;
+        text-align: right;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Item {
+        padding: 0 19px;
+        text-align: center;
+    }
+}

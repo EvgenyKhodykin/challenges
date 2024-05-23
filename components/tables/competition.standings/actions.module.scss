@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    margin-bottom: $grid-gutter * 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.Input {
+    width: 100%;
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        padding-left: $grid-gutter * 0.5;
+        padding-right: $grid-gutter * 0.5;
+        margin-bottom: $grid-gutter * 0.5;
+    }
+
+    .Input {
+        max-width: 343px;
+    }
+}

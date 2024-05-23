@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 40px;
+    white-space: nowrap;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: var(--neutral-color-70);
+    border-radius: 20px;
+}
+
+.Text {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.4em;
+    color: var(--text-color-primary);
+}
+
+.Button {
+    border: none;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 12px;
+    background-color: transparent;
+    cursor: pointer;
+
+    .Icon {
+        color: var(--neutral-color-80);
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    .Text {
+        font-size: 0.8125rem;
+    }
+}

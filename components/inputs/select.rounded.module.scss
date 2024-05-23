@@ -1,0 +1,127 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    div {
+        &[class*='MuiInputBase-root'] {
+            height: 55px;
+            color: var(--text-color-primary);
+            border-radius: 28px;
+        }
+        &[class*='MuiSelect-select'] {
+            font-size: 1.25rem;
+            background: transparent !important;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 49px;
+                height: 49px;
+                opacity: 0;
+                right: 2px;
+                top: 2px;
+                position: absolute;
+                background-color: var(--neutral-color-60);
+                border-radius: 50%;
+                transition: opacity 0.3s ease-in;
+            }
+
+            &:hover {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    svg {
+        &[class*='MuiSvgIcon-root'] {
+            width: 30px;
+            height: 30px;
+            top: calc(50% - 15px);
+            right: 11px;
+        }
+    }
+
+    &.LabelLess {
+        div {
+            &[class*='MuiInputBase-root'] {
+                height: 43px;
+                border-radius: 22px;
+            }
+            &[class*='MuiSelect-select'] {
+                padding-top: 13px;
+                padding-bottom: 13px;
+                font-size: 1.0625rem;
+                min-height: initial;
+                height: 100%;
+                box-sizing: border-box;
+                line-height: 1;
+                padding-left: 22px;
+                padding-right: 41px;
+
+                &::after {
+                    width: 37px;
+                    height: 37px;
+                }
+            }
+        }
+
+        input {
+            &[class*='MuiSelect-nativeInput'] {
+                padding-top: 13px;
+                padding-bottom: 13px;
+                height: 100%;
+            }
+        }
+
+        svg {
+            &[class*='MuiSvgIcon-root'] {
+                right: 5px;
+            }
+        }
+    }
+}
+
+.Paper {
+    border-radius: 20px;
+    margin-top: 5px;
+    border: 1px solid var(--text-color-tertiary);
+    box-shadow: var(--shadow-color-neutral300);
+
+    .List {
+        padding: 5px;
+    }
+
+    .Item {
+        margin-bottom: 2px;
+        padding: 8px 16px;
+        border-radius: 50px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        div {
+            &[class*='MuiInputBase-root'] {
+                height: 65px;
+                border-radius: 33px;
+            }
+            &[class*='MuiSelect-select'] {
+                font-size: 1.0625rem;
+
+                &::after {
+                    width: 59px;
+                    height: 59px;
+                }
+            }
+        }
+
+        svg {
+            &[class*='MuiSvgIcon-root'] {
+                right: 17px;
+            }
+        }
+    }
+}

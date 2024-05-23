@@ -1,0 +1,24 @@
+{
+    "title": "Classement",
+    "keywords": "classement",
+    "description": "Page de Classement",
+
+    "filters": {
+        "all": "TOUT"
+    },
+
+    "table": {
+        "headers": {
+            "name": "Nom",
+            "account": "Compte",
+            "profit": "Profit",
+            "equity": "Équité",
+            "gain": "Gagner"
+        }
+    },
+
+    "details": {
+        "payouts": "Paiements",
+        "foolowMe": "Suis-moi:"
+    }
+}

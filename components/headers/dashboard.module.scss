@@ -1,0 +1,81 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    display: block;
+}
+
+.Top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+
+    .Heading {
+        font-family: Raleway;
+        font-size: 1.0625rem;
+        font-weight: 700;
+        margin: 0;
+        color: var(--text-color-primary);
+    }
+}
+
+.Bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .Left {
+        display: none;
+    }
+
+    .Toggles {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        overflow-y: scroll;
+
+        .Toggle {
+            margin-left: 10px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Top {
+        justify-content: flex-start;
+
+        .Heading {
+            margin-right: $grid-gutter * 0.5;
+            font-size: 0.9375rem;
+        }
+    }
+
+    .Bottom {
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .Left {
+            display: block;
+            flex-grow: 1;
+            flex-shrink: 1;
+            padding-right: $grid-gutter * 2;
+        }
+
+        .Toggles {
+            flex-grow: 0;
+            flex-shrink: 0;
+            justify-content: flex-end;
+            width: initial;
+            overflow-y: initial;
+        }
+    }
+}

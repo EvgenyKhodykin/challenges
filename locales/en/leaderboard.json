@@ -1,0 +1,24 @@
+{
+    "title": "Leaderboard",
+    "keywords": "leaderboard",
+    "description": "Leaderboard Page",
+
+    "filters": {
+        "all": "ALL"
+    },
+
+    "table": {
+        "headers": {
+            "name": "Name",
+            "account": "Account",
+            "profit": "Profit",
+            "equity": "Equity",
+            "gain": "Gain"
+        }
+    },
+
+    "details": {
+        "payouts": "Payouts",
+        "foolowMe": "Follow me:"
+    }
+}

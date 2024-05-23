@@ -1,0 +1,71 @@
+{
+    "title": "Challenge Join",
+    "keywords": "challenge join",
+    "description": "Challenge Join",
+
+    "common": {
+        "challenge": "Challenge",
+        "riskMode": "Risk Mode",
+        "profitTarget": "Profit Target",
+        "balance": "Balance"
+    },
+
+    "leftBoard": {
+        "title": "Join New Challenge",
+        "message": "Choose the Initial Capital and the Challenge type.",
+        "currency": "Currency",
+        "availableLeverage": "Available Leverage 1:100",
+        "riskFilters": {
+            "normal": "NORMAL",
+            "aggressive": "AGGRESSIVE"
+        },
+        "tableCellsHeaders": {
+            "accountBalance": "Account Balance",
+            "tradingPeriod": "Trading Period",
+            "minTradingDays": "Minimum Trading Days",
+            "maxDailyLoss": "Maximum Daily Loss",
+            "maxLoss": "Maximum Loss",
+            "refundableFee": "Refundable Fee"
+        }
+    },
+
+    "rightBoard": {
+        "header": "Summary",
+        "challengeInfo": {
+            "duration": "Duration:",
+            "normal": "Normal",
+            "endDate": "End Date:"
+        },
+        "couponCode": {
+            "inputMessage": "Do you have a coupon code?",
+            "inputLabel": "Coupon Code",
+            "buttonLabel": "APPLY",
+            "discountMessage": {
+                "part1": "Coupon code",
+                "part2": "has been applied:",
+                "discount": "discount"
+            },
+            "subtotal": "Subtotal:",
+            "couponDiscount": "Coupon Discount"
+        },
+
+        "paymentOptions": {
+            "crypto": {
+                "label": "Pay with Cryptocurrency"
+            },
+            "card": {
+                "label": "Pay with card"
+            },
+            "payPal": {
+                "label": "Pay with PayPal",
+                "message": "Before proceeding with your purchase, please log into your PayPal account:",
+                "buttonLabel": "PAY WITH"
+            }
+        },
+
+        "paymentMessage": "TOTAL PAYMENT DUE (TAX INCL.)",
+        "paymentButtonLabel": "PROCEED TO PAYMENT",
+        "paymentInfo": "By clicking Proceed to Payment, you agree to the",
+        "termsOfUse": "Terms of Use"
+    }
+}

@@ -1,0 +1,226 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    padding: 0;
+    overflow: hidden;
+}
+
+.Preview {
+    display: block;
+    width: 100%;
+    padding: $grid-gutter * 0.5 16px;
+
+    .Heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .Expand {
+            font-size: 1.875rem;
+        }
+    }
+
+    .Body {
+        width: 100%;
+        padding: $grid-gutter * 0.5 0px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .Text {
+            font-size: 1.0625rem;
+            font-weight: 600;
+            line-height: 1.4em;
+            text-align: left;
+            color: var(--text-color-primary);
+        }
+    }
+}
+
+.Details {
+    padding: $grid-gutter * 0.5 16px;
+    min-height: 205px;
+}
+
+.Top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Middle {
+    overflow: hidden;
+    width: 100%;
+    padding-top: $grid-gutter;
+    padding-bottom: $grid-gutter * 0.5;
+    text-align: center;
+
+    .Text {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        text-align: left;
+        color: var(--text-color-primary);
+    }
+}
+
+.Bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Title {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .Icon {
+        display: inline-block;
+        padding: 2px;
+        border-radius: 4px;
+        line-height: 0;
+        background-color: var(--text-color-primary);
+        margin-right: 10px;
+
+        &.Success {
+            background-color: var(--success-color-main);
+        }
+
+        &.Failure {
+            background-color: var(--error-color-main);
+        }
+
+        .Calendar {
+            path {
+                fill: var(--neutral-color-0);
+            }
+        }
+    }
+
+    .Text {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        text-align: left;
+        color: var(--text-color-primary);
+    }
+}
+
+.Step {
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: right;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1.4em;
+    color: var(--text-color-tertiary);
+
+    span {
+        font-size: 1.25rem;
+        line-height: 1.4em;
+        font-weight: 600;
+        color: var(--text-color-primary);
+    }
+}
+
+.EndDate {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1.0625rem;
+    line-height: 1.4em;
+    color: var(--text-color-tertiary);
+    text-align: center;
+
+    span {
+        font-weight: 600;
+        color: var(--text-color-primary);
+    }
+}
+
+.TimeFrame {
+    margin-top: 10x;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: var(--text-color-tertiary);
+    text-align: center;
+}
+
+.Graph {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.NoTrades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15px;
+
+    .Logo {
+        height: 46px;
+        width: 46px;
+        background-size: contain;
+        background-image: url(/images/no-trades.svg);
+    }
+
+    p {
+        color: var(--text-color-tertiary);
+        margin: 0;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        padding: $grid-gutter * 0.5;
+    }
+
+    .EndDate {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.9375rem;
+    }
+
+    .TimeFrame {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.8125rem;
+    }
+
+    .Graph {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .NoTrades {
+        margin-top: -25px;
+
+        .Logo {
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Middle {
+        height: 113px;
+    }
+}

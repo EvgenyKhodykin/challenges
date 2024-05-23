@@ -1,0 +1,14 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    padding-left: $grid-gutter;
+    padding-right: $grid-gutter;
+}
+
+@include media-breakpoint-up(lg) {
+    .Root {
+        padding-left: ($grid-gutter * 0.5) + 43;
+        padding-right: $grid-gutter * 0.5;
+    }
+}

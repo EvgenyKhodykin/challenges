@@ -1,0 +1,41 @@
+@import '../../../styles/variables';
+
+.Root {
+    display: flex;
+}
+
+.Container {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:nth-child(2)::before {
+        content: '|';
+        display: inline-block;
+        left: $grid-gutter * -0.5;
+        position: absolute;
+        color: var(--text-color-quaternary);
+        font-size: 0.75rem;
+    }
+
+    &:first-child {
+        margin-right: $grid-gutter * 0.5;
+    }
+    &:nth-child(2) {
+        margin-left: $grid-gutter * 0.5;
+    }
+}
+
+.Person {
+    color: var(--primary-color-hover);
+}
+
+.Icon {
+    margin-right: $grid-gutter * 0.25;
+    font-size: 1.25rem;
+}
+
+.Number {
+    font-weight: 500;
+    font-family: 'Roboto';
+}

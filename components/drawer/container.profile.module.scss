@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--backdrop-color-primary);
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+}
+
+.Content {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 310px;
+    height: 100vh;
+    background-color: var(--neutral-color-0);
+    z-index: 200;
+}
+
+@include media-breakpoint-up(md) {
+    .Content {
+        width: 380px;
+    }
+}

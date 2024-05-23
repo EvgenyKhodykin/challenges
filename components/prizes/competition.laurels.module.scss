@@ -1,0 +1,44 @@
+.Root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+
+    &::before {
+        content: url('/images/laurel-wreath-left.png');
+        position: relative;
+        left: 20px;
+        top: calc(50% - 35px);
+    }
+
+    &::after {
+        content: url('/images/laurel-wreath-right.png');
+        position: relative;
+        right: 20px;
+        top: calc(50% - 35px);
+    }
+    &.RootEmpty {
+        min-height: 76.75px;
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.AmountContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-weight: 500;
+
+    span {
+        &:first-child {
+            font-size: 1.375rem;
+            font-weight: 500;
+            sup {
+                font-size: 0.5em;
+            }
+        }
+    }
+}

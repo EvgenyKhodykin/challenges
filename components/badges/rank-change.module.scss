@@ -1,0 +1,21 @@
+.Root {
+    width: 20px;
+    height: 21px;
+
+    path {
+        fill: var(--neutral-color-60);
+        fill-opacity: 1.5;
+    }
+}
+
+.Silver {
+    path {
+        fill: var(--silver-color) !important;
+    }
+}
+
+.Bronze {
+    path {
+        fill: var(--bronze-color) !important;
+    }
+}

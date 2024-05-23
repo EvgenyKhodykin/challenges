@@ -1,0 +1,23 @@
+{
+    "title": "Sign Up",
+    "keywords": "sign up",
+    "description": "SignUp Form",
+
+    "form": {
+        "error": "Failed to send verification email.",
+        "success": "We sent a verification email with sign up instructions. Please check your inbox.",
+        "email": {
+            "label": "Email",
+            "invalid": "Invalid email",
+            "required": "Email is required"
+        }
+    },
+    "alreadyRegistered": "Already have an account?",
+    "step1": "Basic Info",
+    "step2": "Verify Email",
+    "step3": "Details",
+    "checkInbox": "Please check your Email Inbox.",
+    "emailNotReceived": "I have not received anything.",
+    "resendEmailButton": "Resend email",
+    "getStartedButton": "Get Started"
+}

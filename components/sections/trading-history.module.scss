@@ -1,0 +1,75 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Bottom {
+    padding-top: $grid-gutter * 0.5;
+}
+
+.Title {
+    display: inline-block;
+    position: relative;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-align: left;
+    color: var(--text-color-primary);
+    align-self: flex-start;
+    margin-bottom: $grid-gutter * 0.5;
+}
+
+.Toggle {
+    width: 100%;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.Loading {
+    min-height: 443px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .LoadingLabel {
+        display: block;
+        margin-top: $grid-gutter * 0.5;
+        font-size: 1rem;
+        line-height: 1.4em;
+        font-weight: 600;
+        color: var(--text-color-primary);
+        text-align: center;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Top {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .Bottom {
+        padding-top: $grid-gutter * 0.85;
+    }
+
+    .Title {
+        font-size: 1.125rem;
+        align-self: initial;
+    }
+
+    .Toggle {
+        overflow: hidden;
+        width: initial;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "formVerify": {
+        "error": "Registration failed. Please try again later.",
+        "success": "We sent a verification email with sign up instructions. Please check your inbox."
+    },
+
+    "formFinalize": {
+        "instructions": "Enter your details to create your account.",
+        "error": "Registration failed. Please try again later.",
+        "success": {
+            "title": "Congratulations!",
+            "personalMessage": "You've joined {{name}}.",
+            "generalMessage": "Welcome to the cutting-edge of trading."
+        },
+        "firstName": {
+            "label": "First Name",
+            "required": "Please enter your first name"
+        },
+        "lastName": {
+            "label": "Last Name",
+            "required": "Please enter your last name"
+        },
+        "nickname": {
+            "label": "Nickname (optional)"
+        },
+        "password": {
+            "label": "Password",
+            "invalid": "Your password needs to be a minimum of 8 characters with at least 1 uppercase letter, 1 lower case letter, one numeric digit and one special character",
+            "required": "Please enter your password"
+        },
+        "termsAndPolicy": {
+            "label": "I am over 18 years of age and I have read and accept the <0>Terms & Conditions</0> and <1>Privacy Policy & GDPR</1>",
+            "required": "Please indicate that you accept the Terms & Conditions, Privacy Policy and GDPR"
+        },
+        "subscribeNewsletters": {
+            "label": "I would like to receive the newsletters via Email."
+        },
+        "continueButton": "Continue",
+        "getStartedButton": "Get Started"
+    }
+}

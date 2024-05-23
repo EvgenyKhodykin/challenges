@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    .Title {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.4;
+        color: var(--title-color-primary);
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .HolderInput {
+        padding-bottom: 15px;
+    }
+
+    .HolderButton {
+        text-align: left;
+    }
+
+    .Button {
+        display: inline-flex;
+        min-width: 188px;
+        button {
+            min-width: 188px;
+            padding-left: $grid-gutter * 0.5;
+            padding-right: $grid-gutter * 0.5;
+        }
+    }
+
+    .SaveIcon {
+        margin-right: 10px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        .Title {
+            margin-bottom: 30px;
+        }
+
+        .HolderInput {
+            padding-bottom: 18px;
+        }
+    }
+}

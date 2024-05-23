@@ -1,0 +1,64 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    padding: $grid-gutter * 0.5;
+    overflow: hidden;
+}
+
+.Top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Middle {
+    overflow: hidden;
+    width: 100%;
+    padding: $grid-gutter * 0.7 0;
+    text-align: center;
+
+    .Amount {
+        font-size: 1.9375rem;
+        font-weight: 600;
+        color: var(--text-color-primary);
+        line-height: 1.41em;
+
+        sup {
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1;
+        }
+    }
+}
+
+.Title {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .Icon {
+        display: inline-block;
+        padding: 2px;
+        border-radius: 4px;
+        line-height: 0;
+        color: var(--neutral-color-0);
+        background-color: var(--text-color-primary);
+        margin-right: 10px;
+    }
+
+    .Text {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        text-align: left;
+        color: var(--text-color-primary);
+    }
+}

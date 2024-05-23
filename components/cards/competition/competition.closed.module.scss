@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    color: var(--text-color-tertiary);
+    background: var(--disabled-color-background);
+}
+
+.Icon {
+    color: var(--text-color-tertiary);
+}
+
+.Prize {
+    &::before,
+    &::after {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
+}
+
+.LinkRules {
+    margin-left: 0 !important;
+}
+
+.Participants {
+    margin-top: $grid-gutter !important;
+    margin-bottom: $grid-gutter * 0.6 !important;
+}

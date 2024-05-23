@@ -1,0 +1,96 @@
+{
+    "title": "Tableau de Bord",
+    "keywords": "tableau de bord",
+    "description": "Tableau de Bord des Traders",
+
+    "filters": {
+        "status": {
+            "all": "TOUT",
+            "funded": "FINANCÉ",
+            "active": "ACTIF",
+            "past": "PASSÉ"
+        },
+        "amount": {
+            "profit": "PROFIT",
+            "balance": "ÉQUILIBRE",
+            "amount-to-goal": "MONTANT PAR OBJECTIF"
+        }
+    },
+
+    "sidebar": {
+        "filters": "Filtres",
+        "currency": "Devise",
+        "challengeType": "Type de défi",
+        "amount": "Montant"
+    },
+
+    "challengeTiles": {
+        "status": {
+            "passed": "Passé",
+            "failed": "Échoué",
+            "ongoing": "En cours"
+        },
+
+        "newChallengeTile": {
+            "title": "NOUVEAU DÉFI"
+        },
+
+        "pendingTile": {
+            "messagePart1": "Le compte est en cours de création.",
+            "messagePart2": "Il sera prêt sous peu.",
+            "options": {
+                "setupChallenge": "1. Défi de configuration.",
+                "setupAccess": "2. Accès à la configuration.",
+                "setupAccount": "3. Mettre en place compte."
+            }
+        },
+
+        "buttonRestart": "Redémarrage",
+
+        "goals": {
+            "title": "OBJECTIFS",
+            "toTheGoal": "au but",
+            "tradingDays_one": "{{count}} jour de bourse",
+            "tradingDays_other": "{{count}} jours de bourse",
+            "tradingDaysToTheGoal_other": "{{count}} jours de trading vers l'objectif",
+            "tradingDaysToTheGoal_one": "{{count}} jour de trading vers l'objectif"
+        },
+
+        "restrictions": {
+            "title": "RESTRICTIONS",
+            "todayLoss": "perte autorisée aujourd'hui",
+            "maxLoss": "perte maximale autorisée"
+        },
+
+        "failed": {
+            "profitNotReached": "le profit n'est pas atteint",
+            "todayLossExceeded": "la perte autorisée d'aujourd'hui a été dépassée",
+            "maxLossExcceded": "perte maximale autorisée dépassée",
+            "message": "Relancer le défi"
+        },
+
+        "tooltips": {
+            "targetAmountLeftToEarn": "Montant cible restant à gagnern",
+            "tradingDays": "Jours de bourse",
+            "todayPermittedLoss": "Perte autorisée aujourd'hui",
+            "maxPermittedLoss": "Perte maximale autorisée"
+        },
+
+        "foreGroundLabels": {
+            "amountToGoal": "Montant par rapport à l'objectif",
+            "balance": "Équilibre",
+            "currentProfit": "Bénéfice Actuel"
+        },
+
+        "credentials": {
+            "title": "INFORMATIONS D'IDENTIFICATION",
+            "challengeId": "ID de Défi",
+            "login": "Se connecter",
+            "server": "Serveur",
+            "message": "Vous recevrez un e-mail avec votre mot de passe",
+            "resetPassword": "RÉINITIALISER LE MOT DE PASSE"
+        }
+    },
+
+    "noResultsMessage": "Aucun défi {{status}} disponibles"
+}

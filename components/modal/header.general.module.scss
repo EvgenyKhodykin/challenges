@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    padding-left: $grid-gutter * 0.5;
+    padding-right: $grid-gutter + 40px;
+    background-color: var(--neutral-color-50);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@include media-breakpoint-up(lg) {
+    .Root {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: $grid-gutter;
+        padding-right: $grid-gutter;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

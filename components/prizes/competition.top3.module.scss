@@ -1,0 +1,118 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    sup {
+        font-size: 0.5em;
+    }
+}
+
+.Prize {
+    line-height: 1.25em;
+
+    sup {
+        font-size: 0.5em;
+    }
+
+    div {
+        &:first-child {
+            div {
+                color: var(--neutral-color-90);
+            }
+        }
+    }
+}
+
+.Prize1 {
+    text-align: center;
+
+    .Place {
+        font-size: 5rem;
+        color: var(--neutral-color-0);
+        text-shadow:
+            -1px 0 var(--gold-color),
+            0 1px var(--gold-color),
+            1px 0 var(--gold-color),
+            0 -1px var(--auxiliary-color-gold);
+        line-height: 1em;
+    }
+
+    .Prize {
+        font-size: 1.5rem;
+
+        span {
+            &:first-child {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        }
+
+        div {
+            &:first-child {
+                div {
+                    font-size: 1.5rem;
+                    line-height: 1.25em;
+                }
+            }
+        }
+    }
+}
+
+.Prize2 {
+    text-align: center;
+
+    .Place {
+        font-size: 4rem;
+        color: var(--neutral-color-0);
+        text-shadow:
+            -1px 0 var(--silver-color),
+            0 1px var(--silver-color),
+            1px 0 var(--silver-color),
+            0 -1px var(--auxiliary-color-silver);
+        line-height: 1em;
+    }
+
+    .Prize {
+        font-size: 1.25rem;
+    }
+}
+
+.Prize3 {
+    text-align: center;
+
+    .Place {
+        font-size: 4rem;
+        color: var(--neutral-color-0);
+        text-shadow:
+            -1px 0 var(--bronze-color),
+            0 1px var(--bronze-color),
+            1px 0 var(--bronze-color),
+            0 -1px var(--auxiliary-color-bronze);
+        line-height: 1em;
+    }
+
+    .Prize {
+        font-size: 1.25rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Prize2 {
+        order: 1;
+    }
+    .Prize1 {
+        order: 2;
+
+        .Prize {
+            font-size: 1.875rem;
+            span {
+                &:first-child {
+                    font-size: 1.875rem;
+                }
+            }
+        }
+    }
+    .Prize3 {
+        order: 3;
+    }
+}

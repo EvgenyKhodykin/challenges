@@ -1,0 +1,71 @@
+{
+    "title": "Rejoindre le Défi",
+    "keywords": "rejoindre le défi",
+    "description": "Rejoindre le Défi",
+
+    "common": {
+        "challenge": "Défi",
+        "riskMode": "Mode Risque",
+        "profitTarget": "Objectif De Profit",
+        "balance": "Équilibre"
+    },
+
+    "leftBoard": {
+        "title": "Rejoignez Un Nouveau Défi",
+        "message": "Choisissez le Capital Initial et le type de Challenge.",
+        "currency": "Devise",
+        "availableLeverage": "Effet De Levier Disponible 1:100",
+        "riskFilters": {
+            "normal": "NORMALE",
+            "aggressive": "AGRESSIF"
+        },
+        "tableCellsHeaders": {
+            "accountBalance": "Solde Du Compte",
+            "tradingPeriod": "Période De Négociation",
+            "minTradingDays": "Jours De Négociation Minimum",
+            "maxDailyLoss": "Perte Quotidienne Maximale",
+            "maxLoss": "Perte Maximale",
+            "refundableFee": "Frais Remboursables"
+        }
+    },
+
+    "rightBoard": {
+        "header": "Résumé",
+        "challengeInfo": {
+            "duration": "Durée:",
+            "normal": "Normale",
+            "endDate": "Date De Fin:"
+        },
+        "couponCode": {
+            "inputMessage": "Avez-vous un code promo?",
+            "inputLabel": "Code Promo",
+            "buttonLabel": "APPLIQUER",
+            "discountMessage": {
+                "part1": "Code promo",
+                "part2": "a été appliqué:",
+                "discount": "rabais"
+            },
+            "subtotal": "Total:",
+            "couponDiscount": "Coupon De Réduction"
+        },
+
+        "paymentOptions": {
+            "crypto": {
+                "label": "Payer avec la crypto-monnaie"
+            },
+            "card": {
+                "label": "Payer par carte"
+            },
+            "payPal": {
+                "label": "Payer avec PayPal",
+                "message": "Avant de procéder à votre achat, veuillez vous connecter à votre compte PayPal:",
+                "buttonLabel": "PAYER AVEC"
+            }
+        },
+
+        "paymentMessage": "PAIEMENT TOTAL DÛ (TAXES INCL.)",
+        "paymentButtonLabel": "PROCÉDER AU PAIEMENT",
+        "paymentInfo": "En cliquant sur Procéder au Paiement, vous acceptez les",
+        "termsOfUse": "Conditions D'utilisation"
+    }
+}

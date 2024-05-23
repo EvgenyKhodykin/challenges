@@ -1,0 +1,8 @@
+{
+    "title": "Downloads",
+    "keywords": "downloads",
+    "description": "Downloads",
+    "buttonOpenLabel": "OPEN",
+    "buttonDownloadLabel": "DOWNLOAD",
+    "emptyMessage": "No available downloads"
+}

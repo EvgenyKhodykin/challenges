@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Status {
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+    color: var(--text-color-primary);
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    &.Paid {
+        color: var(--success-color-main);
+        background-color: var(--success-color-background);
+        &::before {
+            background-color: var(--success-color-main);
+        }
+    }
+
+    &.Underpaid {
+        color: var(--info-color-main);
+        background-color: var(--info-color-background);
+        &::before {
+            background-color: var(--info-color-main);
+        }
+    }
+
+    &.Failed {
+        color: var(--error-color-background);
+        background-color: var(--error-color-main);
+        &::before {
+            background-color: var(--error-color-main);
+        }
+    }
+
+    &.Expired {
+        color: var(--text-color-tertiary);
+        background-color: var(--disabled-color-background);
+        &::before {
+            background-color: var(--disabled-color-main);
+        }
+    }
+}

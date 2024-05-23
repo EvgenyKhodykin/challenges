@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    & > div {
+        height: 55px;
+        color: var(--text-color-primary);
+        background-color: var(--neutral-color-0);
+    }
+
+    div {
+        &[class*='MuiSelect-select'] {
+            font-size: 1.25rem;
+            background: transparent !important;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        & > div {
+            height: 65px;
+        }
+
+        div {
+            &[class*='MuiSelect-select'] {
+                font-size: 1.0625rem;
+            }
+        }
+    }
+}

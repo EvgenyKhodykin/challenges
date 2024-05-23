@@ -1,0 +1,47 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ButtonRegister,
+.ButtonStandings {
+    transition: color 0.1s ease-in;
+}
+
+.Registered {
+    display: flex;
+    width: 155px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+
+    .CheckMark {
+        path {
+            fill: var(--primary-color-hover);
+        }
+    }
+
+    span {
+        margin-left: 6px;
+        color: var(--primary-color-hover);
+        font-weight: 600;
+    }
+}
+
+.ButtonRegisterIcon {
+    width: 17.83px;
+    height: 13.44px;
+    margin-left: $grid-gutter * 0.5;
+}
+
+.ButtonStandingsIcon {
+    margin-right: $grid-gutter * 0.5;
+}
+
+.ButtonStandings:hover {
+    color: var(--neutral-color-0);
+}

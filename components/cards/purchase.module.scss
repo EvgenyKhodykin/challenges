@@ -1,0 +1,145 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    margin-bottom: 30px;
+    background: var(--neutral-color-0);
+    border-radius: $card-border-radius-mobile;
+    border: 1px solid var(--neutral-color-60);
+    transition:
+        border-color 0.3s ease-in,
+        box-shadow 0.3s ease-in,
+        transform 0.3s ease-in;
+
+    &:hover {
+        box-shadow: var(--shadow-color-neutral100);
+    }
+}
+
+.BulletDivider {
+    margin: 0 12px;
+    font-size: 1.75em;
+    line-height: 100%;
+}
+
+.Type {
+    font-size: 17px;
+    font-weight: 600;
+}
+.Number {
+    font-size: 17px;
+    font-weight: 600;
+}
+.Button {
+    .Icon {
+        margin-right: 14px;
+    }
+}
+.PaidAmount {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: 600;
+}
+.UnderpaidAmount {
+    margin-top: 5px;
+    text-align: center;
+}
+
+$header-font-size: 0.8125rem;
+$header-line-height: 1.4em;
+.Header {
+    padding: 17px 15px 0px;
+
+    .Top {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .Middle {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        margin-top: $card-spacing;
+
+        .BulletDivider {
+            align-items: flex-start;
+        }
+    }
+
+    .Bottom {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: $card-spacing;
+    }
+}
+
+.Footer {
+    padding: 0 15px 17px;
+    margin-top: $card-spacing;
+    padding-top: $card-spacing;
+    border-top: 1px solid var(--neutral-color-50);
+
+    .Top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .Bottom {
+        margin-top: $card-spacing;
+        text-align: center;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .Header {
+        .Bottom {
+            justify-content: flex-start;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        border-radius: $card-border-radius-desktop;
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+
+    .PurchaseDate,
+    .AmountLabel,
+    .Amount,
+    .PaymentMethod {
+        font-size: 0.9375rem;
+    }
+    .PaymentMethod {
+        text-transform: capitalize;
+    }
+
+    .Header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .Left {
+            .Top {
+                display: flex;
+                align-items: center;
+                .Type {
+                    margin-left: 20px;
+                }
+            }
+            .Bottom {
+                justify-content: flex-start;
+            }
+        }
+    }
+    .Footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

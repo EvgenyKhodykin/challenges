@@ -1,0 +1,65 @@
+{
+    "menu": {
+        "main": {
+            "challenges": "Dashboard",
+            "competitions": "Competitions",
+            "leaderboard": "Leaderboard",
+            "affiliates": "Affiliates",
+            "downloads": "Downloads"
+        },
+        "footer": {
+            "terms": "Terms of Use",
+            "privacy": "Privacy Policy",
+            "risk-disclosure": "Risk Disclosure",
+            "cookies": "Cookie Policy"
+        },
+        "profile": {
+            "profile": "Profile",
+            "security": "Account Security",
+            "purchases": "Purchase History"
+        }
+    },
+
+    "rules": {
+        "title": "Rules",
+        "description": {
+            "header": "Follow all the same rules for the Trading Challenge:",
+            "list": {
+                "maxDailyDrawdown": "{{count}}% Max Daily Drawdown",
+                "maxTotalDrawdown": "{{count}}% Max Total Drawdown",
+                "minTradingDays_one": "{{count}} Min Trading Day",
+                "minTradingDays_other": "{{count}} Min Trading Days",
+                "noTakingAdvantage": "No taking advantage of unrealistic fills in the demo environment"
+            },
+            "timingMessage": "The competition starts on {{startDateTime}} and end on {{endDateTime}}.",
+            "info": "If you end up being one of the winners, someone from our live chat support team will reach out with the appropriate prize.",
+            "buttonReadFAQs": "READ FAQs"
+        }
+    },
+
+    "signOut": "Sign Out",
+    "login": "Log In",
+    "signUp": "Sign Up",
+    "forgotPassword": "Forgot Password",
+    "jurisdictionalDisclaimer": "This website is not directed at any jurisdiction and is not intended for any use that would be contrary to local law or regulation.",
+    "termsLink": "Terms & Conditions",
+    "privacyLink": "Privacy Policy & GDPR",
+    "refreshButtonLabel": "REFRESH",
+    "participantsTooltips": {
+        "totalParticipants": "Total Participants ",
+        "yourRank": "Your Rank"
+    },
+    "paginationTitle": "Rows per page:",
+    "daysCount_one": "{{count}} day",
+    "daysCount_other": "{{count}} days",
+    "buttonCopyLabel": {
+        "copy": "Copy",
+        "copied": "Copied"
+    },
+    "noDataTableMessage": "Uh-oh, we didnt find anything! Try searching again with different inputs.",
+    "download": "Download",
+    "endsIn": "Ends in",
+    "endedOn": "Ended on",
+    "dashboard": "Dashboard",
+    "leaderboard": "Leaderboard"
+}

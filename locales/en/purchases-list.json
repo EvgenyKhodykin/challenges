@@ -1,0 +1,34 @@
+{
+    "title": "Purchase History",
+    "keywords": "purchase history",
+    "description": "Purchase History",
+
+    "purchase": {
+        "title": "Order",
+
+        "socialShareLabel": "Recommend challenge:",
+
+        "paid": {
+            "status": "Paid",
+            "buttonLabel": "RECEIPT"
+        },
+
+        "underpaid": {
+            "status": "Underpaid",
+            "buttonLabel": "COMPLETE PAYMENT",
+            "remainingAmount": "Remaining amount:"
+        },
+
+        "expired": {
+            "status": "Expired"
+        },
+
+        "failed": {
+            "order": "Order",
+            "paid": "Paid:",
+            "completePaymentButtonLabel": "COMPLETE PAYMENT"
+        },
+
+        "paidAmountLabel": "Paid:"
+    }
+}

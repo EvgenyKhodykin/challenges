@@ -1,0 +1,29 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Skeleton {
+    width: 230px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 10px 10px;
+    border: 1px solid var(--neutral-color-60);
+    background: var(--neutral-color-50);
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Body {
+    display: flex;
+    justify-content: center;
+}
+
+.Footer {
+    display: flex;
+    justify-content: center;
+}

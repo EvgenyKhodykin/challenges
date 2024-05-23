@@ -1,0 +1,90 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    display: block;
+}
+
+.Top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.Bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.RegisterButton {
+    margin-right: 10px;
+}
+
+.Info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+
+    .Status {
+        font-size: 1.0625rem;
+    }
+
+    .Id {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        color: var(--text-color-primary);
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .TopActions {
+        display: none;
+    }
+
+    .Info {
+        justify-content: flex-start;
+
+        .Status {
+            font-size: 0.9375rem;
+        }
+
+        .Id {
+            font-size: 0.9375rem;
+        }
+
+        .Amount {
+            font-size: 1.375rem;
+
+            sup {
+                font-size: 0.6875rem;
+            }
+        }
+    }
+
+    .Links {
+        display: flex;
+        min-height: 52px;
+    }
+
+    .RegisterButton {
+        margin-left: 30px;
+        margin-right: 0;
+    }
+}

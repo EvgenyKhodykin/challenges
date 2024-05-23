@@ -1,0 +1,64 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    overflow: visible !important;
+}
+
+.Skeleton {
+    padding: 15px;
+    width: 100%;
+    height: 380px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    .Header {
+        flex-grow: 0;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Body {
+        flex-grow: 1;
+        flex-shrink: 1;
+        position: relative;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .Footer {
+        margin: 0 auto;
+        width: 50%;
+        border-radius: 8px;
+        margin-top: $grid-gutter * 0.5;
+    }
+}
+
+.Snapped {
+    position: fixed;
+    top: 16px;
+    left: 20px;
+    right: 20px;
+    z-index: 100;
+    border-color: transparent;
+}
+
+@include media-breakpoint-up(md) {
+    .Snapped {
+        position: initial;
+        top: initial;
+        left: initial;
+        right: initial;
+        z-index: initial;
+    }
+}

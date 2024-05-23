@@ -1,0 +1,204 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    background: var(--neutral-color-50);
+    border-radius: 8px;
+    border: 1px solid var(--neutral-color-60);
+    box-shadow: var(--shadow-color-neutral100);
+    transition:
+        border-color 0.3s ease-in,
+        box-shadow 0.3s ease-in,
+        transform 0.3s ease-in;
+
+    &:hover {
+        box-shadow: var(--shadow-color-neutral200);
+    }
+}
+
+.Header {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 17px 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Date,
+.DateLabel {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.4em;
+    text-align: right;
+    color: var(--text-color-primary);
+}
+
+.Body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: $grid-gutter * 0.25;
+}
+
+.Icon {
+    color: var(--text-color-primary);
+}
+
+.Prize {
+    margin-top: $grid-gutter * 0.25;
+    font-size: 1.125rem;
+    line-height: 1.375em;
+}
+
+.Title {
+    margin-top: $grid-gutter * 0.2;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.Participants {
+    margin-top: $grid-gutter * 0.5;
+}
+
+.Footer {
+    margin-top: $grid-gutter * 0.5;
+}
+
+.LinkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-primary);
+    margin-top: $grid-gutter * 0.5;
+}
+
+.LinkRules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.LinkRulesWithoutStandings {
+    margin-left: 0 !important;
+}
+
+.LinkRulesIcon {
+    margin-right: $grid-gutter * 0.25;
+}
+
+.LinkStandings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.ButtonStandingsIcon {
+    margin-right: 10px;
+}
+
+.RegistrationDeadline {
+    min-height: 22.094px;
+    margin-top: $grid-gutter * 0.5;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1.7em;
+
+    &.isRegistered {
+        color: transparent;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        border-radius: 16px;
+        box-shadow: var(--shadow-color-neutral100);
+        transform: translateY(0);
+
+        &:hover {
+            box-shadow: var(--shadow-color-neutral200);
+            transform: translateY(-3px);
+
+            .ButtonDetails {
+                opacity: 1;
+            }
+        }
+    }
+
+    .RootPreview {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        padding: 8px 10px;
+        background: var(--neutral-color-50);
+        border-radius: 8px;
+        border: 1px solid var(--neutral-color-60);
+        box-shadow: var(--shadow-color-neutral100);
+        transition:
+            border-color 0.3s ease-in,
+            box-shadow 0.3s ease-in,
+            transform 0.3s ease-in;
+
+        &:hover {
+            box-shadow: var(--shadow-color-neutral200);
+        }
+    }
+
+    .HeaderPreview {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-wrap: wrap;
+    }
+
+    .BodyPreview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    .FooterPreview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 400;
+        font-size: 0.8125rem;
+        line-height: 1.7em;
+        color: var(--text-color-primary);
+    }
+
+    .TitlePreview {
+        font-weight: 600;
+        font-size: 0.9375rem;
+        line-height: 1.4em;
+    }
+
+    .Status {
+        margin-right: 5px;
+        text-wrap: nowrap;
+    }
+
+    .ParticipantsPreview {
+        margin-top: 0;
+    }
+
+    .NoRank {
+        padding-left: $grid-gutter * 0.5;
+    }
+}

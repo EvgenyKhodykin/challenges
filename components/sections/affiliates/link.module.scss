@@ -1,0 +1,110 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    display: block;
+    height: 100%;
+}
+
+.Top {
+    font-weight: 600;
+    text-align: left;
+    color: var(--text-color-primary);
+    font-size: 1.0625rem;
+    line-height: 1.35em;
+    padding-bottom: $grid-gutter * 0.69;
+}
+
+.Bottom {
+    p {
+        margin-top: 0;
+        margin-bottom: $grid-gutter * 0.5;
+        color: var(--text-color-primary);
+        text-align: left;
+        font-weight: 400;
+        font-size: 1.0625rem;
+        line-height: 1.58em;
+    }
+}
+
+.FormGroup {
+    margin-bottom: $grid-gutter;
+
+    &.Link {
+        position: relative;
+        margin-bottom: initial;
+
+        *[class*='MuiFormControl-root'] {
+            *[class*='MuiInputBase-input'] {
+                padding-right: 110px;
+            }
+        }
+
+        .Button {
+            position: absolute;
+            right: 15px;
+            bottom: 5px;
+        }
+
+        &.Copied {
+            *[class*='MuiFormControl-root'] {
+                *[class*='MuiInputBase-input'] {
+                    padding-right: 123px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Top {
+        padding-bottom: $grid-gutter * 0.55;
+    }
+
+    .Bottom {
+        padding-left: $grid-gutter * 0.69;
+        padding-right: $grid-gutter * 0.69;
+        padding-bottom: $grid-gutter * 0.69;
+
+        p {
+            margin-bottom: $grid-gutter;
+            font-size: 1rem;
+            line-height: 1.375em;
+        }
+    }
+
+    .Form {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .FormGroup {
+        &.AffiliateID {
+            flex-grow: 1;
+            flex-shrink: 1;
+            padding-right: $grid-gutter * 0.5;
+        }
+
+        &.Link {
+            flex-grow: 1;
+            flex-shrink: 1;
+            width: 100%;
+            margin-top: $grid-gutter * 0.5;
+        }
+
+        &.Campaign {
+            min-width: 118px;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .FormGroup {
+        &.Campaign {
+            width: 274px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.Root {
+    width: 13px;
+    height: 16px;
+    // fill: var(--neutral-color-100);
+
+    .Line {
+        stroke: var(--neutral-color-0);
+        stroke-opacity: 0.6;
+        stroke-width: 0.714286px;
+        stroke-linecap: round;
+    }
+
+    .StopOne {
+        stop-color: var(--neutral-color-70);
+    }
+
+    .StopTwo {
+        stop-color: var(--neutral-color-100);
+        offset: 1;
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "title": "Account Security",
+    "keywords": "account security",
+    "description": "Account Security",
+
+    "changeEmail": {
+        "form": {
+            "title": "Change Email",
+            "error": "Failed to update your email",
+            "success": "Your email was updated successfully",
+            "email": {
+                "label": "Email",
+                "required": "Email is required",
+                "invalid": "Invalid email"
+            },
+            "password": {
+                "label": "Password",
+                "helper": "For safety reasons, enter your current password",
+                "required": "Password is required"
+            }
+        }
+    },
+
+    "changePassword": {
+        "form": {
+            "title": "Change Password",
+            "error": "Failed to update your password",
+            "success": "Your password was updated successfully",
+            "oldPassword": {
+                "label": "Old Password",
+                "helper": "For safety reasons, enter your current password",
+                "required": "Password is required"
+            },
+            "newPassword": {
+                "label": "New Password",
+                "required": "Password is required"
+            },
+            "forgotPassword": "Forgot your password?"
+        }
+    },
+
+    "passwordRules": {
+        "header": "Your password needs to:",
+        "lowerUpperCase": "include both lower and upper case characters.",
+        "includeOneDigit": "include at least one digit or symbol.",
+        "charactersLong": "be at least 8 characters long."
+    },
+
+    "saveButton": "SAVE CHANGES"
+}

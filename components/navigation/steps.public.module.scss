@@ -1,0 +1,193 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+$background-mobile: var(--neutral-color-10);
+.Wrapper {
+    position: relative;
+    list-style: none;
+    padding: 0 $grid-gutter * 0.5;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    &::before {
+        content: '';
+        display: block;
+        width: auto;
+        height: 1px;
+        background-color: var(--text-color-quaternary);
+        position: absolute;
+        left: $grid-gutter * 0.5;
+        right: $grid-gutter * 0.5;
+        bottom: 9px;
+    }
+}
+
+.Item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 1 calc(100vw * 0.33);
+    max-width: calc(100vw * 0.33);
+
+    &:first-child {
+        flex: 0 0 auto;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 10px;
+            background-color: $background-mobile;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &:last-child {
+        flex: 0 0 auto;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 10px;
+            background-color: $background-mobile;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+.Text {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 1.0625rem;
+    line-height: 1.76em;
+    color: var(--text-color-quaternary);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+    margin-bottom: 10px;
+    &.TextPrevious {
+        font-weight: 600;
+    }
+
+    &.TextCurrent {
+        font-weight: 600;
+        color: var(--text-color-primary);
+    }
+}
+
+.Icon {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    background-color: $background-mobile;
+    .Current {
+        font-size: 0.9375rem;
+        color: var(--secondary-color-main);
+    }
+
+    .Previous {
+        font-size: 1rem;
+        color: var(--secondary-color-main);
+    }
+
+    .Next {
+        font-size: 0.9375rem;
+        color: var(--text-color-quaternary);
+    }
+}
+
+$background-desktop: var(--neutral-color-40);
+@include media-breakpoint-up(md) {
+    .Item {
+        &:first-child {
+            &::before {
+                background-color: $background-desktop;
+            }
+        }
+        &:last-child {
+            &::before {
+                background-color: $background-desktop;
+            }
+        }
+    }
+
+    .Icon {
+        background-color: $background-desktop;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Wrapper {
+        padding: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        overflow-y: initial;
+        overflow-x: initial;
+
+        &::before {
+            width: 1px;
+            height: initial;
+            bottom: 0;
+            top: 0;
+            right: initial;
+            left: 9px;
+        }
+    }
+
+    .Item {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 0 0 auto;
+        max-width: initial;
+        margin-bottom: 24px;
+
+        &:first-child {
+            &::before {
+                height: 50%;
+                width: 10px;
+                top: 0;
+                left: 0;
+                bottom: initial;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+            &::before {
+                height: 50%;
+                width: 10px;
+                bottom: 0;
+                left: 0;
+                right: initial;
+                top: initial;
+            }
+        }
+    }
+
+    .Text {
+        margin-bottom: 0;
+        font-size: 0.9375rem;
+        line-height: 2em;
+    }
+
+    .Icon {
+        margin-right: 10px;
+    }
+}

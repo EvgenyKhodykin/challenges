@@ -1,0 +1,22 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Wrapper {
+    width: 35px;
+    height: 35px;
+    fill: none;
+    path {
+        animation: rotate 1s linear infinite;
+        transform-origin: center;
+    }
+
+    stop {
+        stop-color: var(--secondary-color-main);
+    }
+}

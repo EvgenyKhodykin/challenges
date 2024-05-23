@@ -1,0 +1,127 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    display: block;
+}
+
+.TopActions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 24px;
+
+    .Status {
+        font-size: 1.0625rem;
+    }
+
+    .Id {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        color: var(--text-color-primary);
+    }
+
+    .Amount {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.4em;
+        color: var(--text-color-primary);
+
+        sup {
+            font-weight: 400;
+            font-size: 0.75rem;
+            line-height: 1.4em;
+        }
+    }
+}
+
+.Bottom {
+    display: block;
+
+    .Tags {
+        display: none;
+    }
+
+    .Tag {
+        margin-right: 10px;
+    }
+
+    .BottomActions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .TopActions {
+        display: none;
+    }
+
+    .Info {
+        justify-content: flex-start;
+        margin-bottom: 30px;
+
+        .Status {
+            font-size: 0.9375rem;
+        }
+
+        .Id {
+            font-size: 0.9375rem;
+        }
+
+        .Amount {
+            font-size: 1.375rem;
+
+            sup {
+                font-size: 0.6875rem;
+            }
+        }
+    }
+
+    .Bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        width: 100%;
+
+        .Tags {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            flex-grow: 1;
+            flex-shrink: 1;
+
+            div:first-child {
+                background-color: var(--info-color-background);
+            }
+        }
+
+        .BottomActions {
+            flex-grow: 0;
+            flex-shrink: 0;
+            justify-content: center;
+        }
+
+        .Rules {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+    }
+}

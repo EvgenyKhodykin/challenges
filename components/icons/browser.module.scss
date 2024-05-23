@@ -1,0 +1,25 @@
+.Root {
+    width: 64px;
+    height: 64px;
+
+    fill: none;
+
+    path {
+        &:nth-child(1) {
+            stroke: currentColor;
+            stroke-width: 4;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        &:nth-child(2) {
+            stroke: currentColor;
+            stroke-width: 4;
+            stroke-linejoin: round;
+        }
+        &:nth-child(3) {
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            fill: currentColor;
+        }
+    }
+}

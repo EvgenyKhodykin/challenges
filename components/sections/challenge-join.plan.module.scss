@@ -1,0 +1,398 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Head {
+    padding: $grid-gutter * 0.5 16px;
+    padding-bottom: 0;
+}
+
+.Title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .IconHolder {
+        display: inline-block;
+        padding: 2px;
+        border-radius: 4px;
+        line-height: 0;
+        background-color: var(--text-color-primary);
+        margin-right: 10px;
+    }
+
+    .Icon {
+        color: var(--neutral-color-0);
+    }
+
+    .Text {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        color: var(--text-color-primary);
+        text-align: left;
+    }
+}
+
+.Description {
+    margin-top: $grid-gutter * 0.5;
+    margin-bottom: $grid-gutter * 0.5;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: var(--text-color-primary);
+    text-align: left;
+}
+
+.Filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+
+    .Currency {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .RiskMode {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .Balance {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .Select {
+        & > div {
+            height: 40px;
+            min-width: 110px;
+            border-radius: 20px;
+            border: none;
+            background-color: var(--neutral-color-50) !important;
+        }
+
+        svg {
+            &[class*='MuiSvgIcon-root'] {
+                font-size: 1rem;
+                width: 24px;
+                height: 24px;
+                top: initial;
+                right: 2px;
+            }
+        }
+
+        div {
+            &[class*='MuiSelect-select'] {
+                font-size: 0.9375rem;
+                background: transparent !important;
+                padding-right: 26px !important;
+                padding-top: 8px;
+            }
+        }
+
+        label {
+            display: none;
+        }
+    }
+
+    .Toggle {
+        button {
+            font-family: Roboto;
+            font-weight: 400;
+            &[class*='Mui-selected'] {
+                background-color: var(--success-color-main) !important;
+                color: var(--neutral-color-0) !important;
+            }
+        }
+    }
+
+    .Label {
+        display: block;
+        padding-left: 8px;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 2.14em;
+        color: var(--text-color-tertiary);
+        text-align: left;
+    }
+
+    .Amount {
+        span {
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}
+
+.TableHeader {
+    margin-top: $grid-gutter * 0.66;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+
+    .Left {
+        margin-bottom: 14px;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.2em;
+        color: var(--text-color-secondary);
+    }
+
+    .Right {
+        margin-bottom: 6px;
+        font-weight: 600;
+        font-size: 1.0625rem;
+        line-height: 1.4em;
+        color: var(--text-color-primary);
+    }
+}
+
+.Table {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    width: 100%;
+    border-top: 1px solid var(--neutral-color-50);
+
+    .Cell {
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        white-space: nowrap;
+        padding: 10px 8px;
+        color: var(--text-color-secondary);
+        font-weight: 400;
+        font-size: 0.9375rem;
+        line-height: 1.4em;
+
+        &:first-child {
+            border-bottom: 1px solid var(--neutral-color-50);
+            font-weight: 600;
+            font-size: 1.0625rem;
+            line-height: 1.6em;
+            color: var(--text-color-primary);
+        }
+
+        &:last-child {
+            border-top: 1px solid var(--neutral-color-50);
+            font-weight: 600;
+            font-size: 1.0625rem;
+            line-height: 1.6em;
+            color: var(--text-color-primary);
+        }
+    }
+
+    .Column {
+        position: relative;
+        flex-grow: 1;
+        flex-shrink: 1;
+        background-color: transparent;
+        transition: background-color 0.3s ease-in;
+        min-width: 100px;
+
+        &:hover {
+            background-color: var(--neutral-color-50);
+            cursor: pointer;
+        }
+
+        &:first-child {
+            background-color: var(--neutral-color-40);
+            cursor: initial;
+            min-width: 160px;
+            flex-grow: 0;
+            flex-shrink: 0;
+
+            .Cell {
+                padding-left: $grid-gutter * 0.5;
+                color: var(--text-color-primary);
+                font-size: 1rem;
+                line-height: 1.4em;
+            }
+        }
+
+        &.Active {
+            background-color: transparent;
+            cursor: initial;
+
+            .Cell {
+                &:nth-child(2) {
+                    border-bottom: 1px solid var(--neutral-color-50);
+                    font-weight: 600;
+                    font-size: 1.0625rem;
+                    line-height: 1.6em;
+                    color: var(--text-color-primary);
+                }
+            }
+        }
+    }
+
+    .Amount {
+        span {
+            font-weight: 600;
+            font-size: 1.0625rem;
+            line-height: 1.6em;
+            color: var(--text-color-primary);
+        }
+    }
+
+    .ActiveBackground {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        background-color: var(--success-color-background);
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Head {
+        padding: $grid-gutter * 0.5;
+        padding-bottom: 0;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Filters {
+        padding-left: $grid-gutter * 1.11;
+        .RiskMode {
+            margin-left: 18px;
+            margin-right: 18px;
+        }
+        .Balance {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .Select {
+            & > div {
+                height: 52px;
+                border-radius: 60px;
+                border: 1px solid var(--text-color-tertiary);
+                background-color: var(--neutral-color-0) !important;
+            }
+            div {
+                &[class*='MuiSelect-select'] {
+                    padding-left: 20px;
+                    padding-right: 36px !important;
+                }
+            }
+
+            svg {
+                &[class*='MuiSvgIcon-root'] {
+                    right: 12px;
+                }
+            }
+        }
+
+        .Toggle {
+            height: 52px;
+            button {
+                padding: 12px 20px;
+                height: 42px;
+            }
+        }
+
+        .Label {
+            font-size: 0.8125rem;
+            line-height: 2.3em;
+            padding-left: 15px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .Description {
+        font-size: 1rem;
+        margin-top: $grid-gutter * 0.86;
+        margin-bottom: $grid-gutter * 1.138;
+        padding-left: $grid-gutter * 1.11;
+    }
+
+    .TableHeader {
+        height: 64px;
+        margin-top: $grid-gutter * 0.88;
+        flex-direction: row;
+        padding: 0;
+        flex-wrap: nowrap;
+        border-top: 1px solid var(--text-color-quaternary);
+
+        .Left {
+            width: 290px;
+            margin-bottom: 0;
+            padding-left: $grid-gutter * 1.61;
+            text-align: left;
+            line-height: 2.375rem;
+            font-size: 1rem;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        .Right {
+            margin-bottom: 0;
+            flex-grow: 1;
+            flex-shrink: 1;
+            text-align: center;
+        }
+    }
+
+    .Table {
+        .Cell {
+            height: 58px;
+            justify-content: center;
+            font-size: 1rem;
+            line-height: 2.375;
+
+            &:last-child {
+                font-size: 1rem;
+                line-height: 2.375;
+            }
+        }
+        .Column {
+            &:first-child {
+                min-width: initial;
+                width: 290px;
+                .Cell {
+                    justify-content: flex-start;
+                    padding-left: $grid-gutter * 1.61;
+                    padding-right: $grid-gutter * 1.8;
+                    font-size: 1rem;
+                    line-height: 2.375;
+                }
+            }
+
+            &.Active {
+                .Cell {
+                    &:nth-child(2) {
+                        font-size: 1rem;
+                        line-height: 2.375;
+                    }
+                }
+            }
+        }
+
+        .Amount {
+            span {
+                font-size: 1rem;
+                line-height: 2.375;
+            }
+        }
+    }
+}

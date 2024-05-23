@@ -1,0 +1,65 @@
+{
+    "menu": {
+        "main": {
+            "challenges": "Tableau de bord",
+            "competitions": "Compétitions",
+            "leaderboard": "Classement",
+            "affiliates": "Affiliés",
+            "downloads": "Téléchargements"
+        },
+        "footer": {
+            "terms": "Conditions d'utilisation",
+            "privacy": "Politique de confidentialité",
+            "risk-disclosure": "Divulgation des risques",
+            "cookies": "Politique des cookies"
+        },
+        "profile": {
+            "profile": "Profil",
+            "security": "Sécurité du compte",
+            "purchases": "Historique des achats"
+        }
+    },
+
+    "rules": {
+        "title": "Règles",
+        "description": {
+            "header": "Suivez les mêmes règles pour le Trading Challenge :",
+            "list": {
+                "maxDailyDrawdown": "{{count}}% Tirage Quotidien Maximum",
+                "maxTotalDrawdown": "{{count}}% Tirage Total Maximum",
+                "minTradingDays_one": "{{count}} Jour De Négociation Minimum",
+                "minTradingDays_other": "{{count}} Jours De Négociation Minimum",
+                "noTakingAdvantage": "Ne pas profiter de remplissages irréalistes dans l'environnement de démonstration"
+            },
+            "timingMessage": "Le concours débute le {{startDateTime}} et se terminent par {{endDateTime}}.",
+            "info": "Si vous faites partie des gagnants, un membre de notre équipe d'assistance par chat en direct vous contactera pour vous proposer le prix approprié.",
+            "buttonReadFAQs": "LIRE La FAQ"
+        }
+    },
+
+    "signOut": "Se déconnecter",
+    "login": "Se connecter",
+    "signUp": "S'inscrire",
+    "forgotPassword": "Mot de passe oublié",
+    "jurisdictionalDisclaimer": "Ce site web ne vise aucune juridiction et n'est pas destiné à une utilisation qui serait contraire à la législation ou à la réglementation locale.",
+    "termsLink": "Conditions générales",
+    "privacyLink": "Politique de confidentialité et GDPR",
+    "refreshButtonLabel": "RAFRAÎCHIR",
+    "participantsTooltips": {
+        "totalParticipants": "Nombre total de participants",
+        "yourRank": "Ton Rang"
+    },
+    "paginationTitle": "Lignes par page:",
+    "daysCount_one": "{{count}} jour",
+    "daysCount_other": "{{count}} jours",
+    "buttonCopyLabel": {
+        "copy": "Copie",
+        "copied": "Copié"
+    },
+    "noDataTableMessage": "Oh-oh, nous n'avons rien trouvé! Essayez à nouveau de rechercher avec des entrées différentes.",
+    "download": "Télécharger",
+    "endsIn": "Fini dans",
+    "endedOn": "Terminé le",
+    "dashboard": "Tableau de bord",
+    "leaderboard": "Classement"
+}

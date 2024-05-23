@@ -1,0 +1,44 @@
+.Root {
+    font-weight: 600;
+    font-size: 0.8125rem;
+    line-height: 1.4em;
+    text-align: left;
+    color: var(--text-color-primary);
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    &.Passed {
+        &::before {
+            background-color: var(--success-color-main);
+        }
+    }
+
+    &.Failed {
+        &::before {
+            background-color: var(--error-color-main);
+        }
+    }
+
+    &.Ongoing {
+        &::before {
+            background-color: var(--info-color-main);
+        }
+    }
+}
+
+.Preview {
+    &::before {
+        margin-right: 5px;
+    }
+}

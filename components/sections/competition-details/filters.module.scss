@@ -1,0 +1,103 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--backdrop-color-primary);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.Root {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+}
+
+.ButtonsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 13px;
+}
+
+.CloseButtonContainer {
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    margin-bottom: 33px;
+    padding-top: 10px;
+}
+
+.BackButtonContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    margin-bottom: 15px;
+}
+
+.Text {
+    margin-left: 20px;
+    font-family: Raleway;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: var(--text-color-primary);
+}
+
+.Wrapper {
+    padding-top: 3px;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.PreviewList {
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-top: 3px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.CompetitionPreview {
+    width: 230px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.Upcoming {
+    height: 180px !important;
+}
+
+.Active {
+    border: 2px solid var(--secondary-color-main);
+    background: transparent;
+}
+
+.ButtonListOpened {
+    align-items: flex-start !important;
+    margin-left: 25px;
+}
+
+.FilterOpened {
+    background-color: var(--neutral-color-0);
+}

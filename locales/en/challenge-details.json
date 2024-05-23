@@ -1,0 +1,107 @@
+{
+    "title": "Challenge Details",
+    "keywords": "challenge details",
+    "description": "Challenge Details",
+
+    "credentials": {
+        "title": "Credentials",
+        "login": "Login",
+        "passwords": "Passwords",
+        "server": "Server",
+        "platform": "Platform",
+        "message": "You will receive an email with your Password and Investor Password",
+        "resetPassword": "RESET PASSWORD"
+    },
+    "timeline": {
+        "step": "Step {{count}}",
+        "endsIn": "Ends in:",
+        "stage": "Stage {{count}}",
+        "start": "Start",
+        "end": "End"
+    },
+    "realizedProfit": {
+        "title": "Realized Profit"
+    },
+    "tradingDays": {
+        "title": "Trading Days",
+        "noTradesYet": "No trades yet"
+    },
+    "liveEquity": {
+        "title": "Live Equity",
+        "filterLabel": "SUMMARY",
+        "unrealizedProfit": "Unrealized Profit",
+        "profitToGoal": "Average Daily Profit to Goal",
+        "commitedFunds": "Committed Funds",
+        "dailyLoss": "Remaining Daily Loss",
+        "overallLoss": "Permitted Overall Loss",
+        "accountEquity": "Account Equity",
+        "noActiveTrades": "No active trades"
+    },
+    "tradingHistory": {
+        "title": "Trading History",
+        "filters": {
+            "TRADES": "TRADES",
+            "TIME": "TIME",
+            "SUMMARY": "SUMMARY",
+            "JOURNAL": "JOURNAL"
+        },
+        "trades": {
+            "header": "Profit",
+            "yaxisTitle": "Profit",
+            "xaxisTitle": "Tradeds"
+        },
+        "time": {
+            "header": "Balance",
+            "yaxisTitle": "Balance",
+            "xaxisTitle": "Traded Days"
+        },
+        "summary": {
+            "balance": "Balance",
+            "equity": "Equity",
+            "averageTradeDuration": "Average Trade Duration",
+            "winRate": "Win Rate",
+            "averageProfit": "Average Profit",
+            "averageLoss": "Average Loss",
+            "profitFactor": "Profit Factor"
+        },
+        "journal": {
+            "openedFrom": {
+                "label": "Opened From"
+            },
+            "openedTo": {
+                "label": "Opened To"
+            },
+            "clearFiltersButton": "CLEAR FILTERS",
+            "exportButton": "EXPORT",
+            "tableMessage": "Uh-oh, we didnt find anything! Try searching again with different inputs."
+        }
+    },
+
+    "table": {
+        "headers": {
+            "ticket": "Ticket",
+            "openTime": "Open Time",
+            "cmd": "Type",
+            "volume": "Volume",
+            "symbol": "Symbol",
+            "openPrice": "Open Price",
+            "sl": "S/L",
+            "tp": "T/P",
+            "closeTime": "Close Time",
+            "closePrice": "Close Price",
+            "profit": "Profit",
+            "change": "Change"
+        }
+    },
+
+    "thresholds": {
+        "topThresholdLabel": "Target Balance",
+        "bottomThresholdLabel": "Min Permitted Balance"
+    },
+
+    "toGoal": "To goal:",
+    "target": "Target:",
+    "numberOfTrades": "Number of Trades",
+    "loading": "Loading...",
+    "message": "Uh-oh, we did not find anything! Try trade first."
+}

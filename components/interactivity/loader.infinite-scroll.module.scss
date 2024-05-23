@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: $grid-gutter * 0.25;
+    padding-bottom: $grid-gutter * 0.25;
+}
+
+.Icon {
+    color: var(--text-color-primary);
+
+    path {
+        animation: rotate 1s linear infinite;
+        transform-origin: center;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        padding-top: $grid-gutter * 0.5;
+        padding-bottom: $grid-gutter * 0.5;
+    }
+}

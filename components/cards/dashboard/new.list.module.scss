@@ -1,0 +1,50 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 180px;
+    background: var(--gradient-color-primary);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.174em;
+    color: var(--text-color-primary);
+    text-decoration: none;
+    border: 1px solid var(--neutral-color-15);
+
+    &:hover {
+        border-color: var(--secondary-color-main);
+    }
+}
+
+.Icon {
+    width: 44px;
+    height: 44px;
+    margin-right: 14px;
+}
+
+@include media-breakpoint-up(md) {
+    .Root {
+        background: var(--gradient-color-primary);
+        font-size: 1.0625rem;
+    }
+
+    .Icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Icon {
+        width: 100px;
+        height: 100px;
+    }
+}

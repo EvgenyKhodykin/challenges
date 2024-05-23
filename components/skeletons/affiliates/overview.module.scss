@@ -1,0 +1,25 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    min-height: 187px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Body {
+    display: flex;
+    justify-content: center;
+}
+
+.Footer {
+    display: flex;
+    justify-content: space-between;
+}

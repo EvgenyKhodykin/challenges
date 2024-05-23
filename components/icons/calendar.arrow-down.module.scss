@@ -1,0 +1,20 @@
+.Root {
+    width: 24px;
+    height: 24px;
+    fill: none;
+
+    path {
+        &:first-child {
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            fill: currentColor;
+        }
+
+        &:last-child {
+            stroke: currentColor;
+            stroke-width: 1.8px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+    }
+}

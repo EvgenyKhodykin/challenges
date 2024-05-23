@@ -1,0 +1,89 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    padding-left: $grid-gutter;
+    padding-right: $grid-gutter;
+    padding-top: $grid-gutter * 0.25;
+    padding-bottom: $grid-gutter * 0.25;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 33%;
+}
+
+.Button {
+    width: 71px;
+    height: 48px;
+    min-width: initial;
+    max-width: initial;
+    border-radius: 5px;
+    border-color: var(--neutral-color-60);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 34px 34px;
+
+    &:hover {
+        background-color: initial;
+        border-color: var(--text-color-tertiary);
+    }
+
+    &.Bitcoin {
+        background-image: url(/images/bitcoin.svg);
+    }
+
+    &.Etherium {
+        background-image: url(/images/etherium.svg);
+    }
+
+    &.Lightcoin {
+        background-image: url(/images/lightcoin.svg);
+    }
+
+    &.Dogecoin {
+        background-image: url(/images/dogecoin.svg);
+    }
+
+    &.Tether {
+        background-image: url(/images/tether.svg);
+    }
+
+    &.USDCoin {
+        background-image: url(/images/usdcoin.svg);
+    }
+}
+
+.Label {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-align: center;
+    color: var(--text-color-secondary);
+    display: inline-block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+@include media-breakpoint-up(md) {
+    .Container {
+        width: initial;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Root {
+        padding-left: ($grid-gutter * 0.5) + 43;
+        padding-right: $grid-gutter * 0.5;
+    }
+}

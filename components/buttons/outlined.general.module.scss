@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Button {
+    @include button-breakpoint-relevant(xs);
+    @include button-general();
+    color: var(--neutral-color-100);
+    border: 1.5px solid var(--neutral-color-100);
+    text-transform: none;
+
+    &:hover {
+        background-color: var(--secondary-color-main);
+        color: var(--neutral-color-0);
+        border: 1.5px solid var(--secondary-color-main);
+    }
+
+    &:disabled {
+        color: var(--neutral-color-70);
+        border: 1.5px solid var(--neutral-color-70);
+
+        &:hover {
+            cursor: not-allowed;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Button {
+        @include button-breakpoint-relevant(md);
+    }
+}

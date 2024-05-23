@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.Wrapper {
+    background-color: var(--neutral-color-10);
+}
+
+@media print {
+    .Wrapper {
+        background-color: transparent;
+    }
+}

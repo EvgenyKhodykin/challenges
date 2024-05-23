@@ -1,0 +1,60 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.Root {
+    overflow: visible !important;
+}
+
+.Skeleton {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    .Search {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Header {
+        padding-top: 20px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Body {
+        flex-grow: 1;
+        flex-shrink: 1;
+        position: relative;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .Footer {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 50%;
+        border-radius: 8px;
+        margin-top: $grid-gutter * 0.5;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Skeleton {
+        margin-left: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

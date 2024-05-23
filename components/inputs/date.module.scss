@@ -1,0 +1,38 @@
+.Root {
+    & > div {
+        border-radius: initial;
+        border: none !important;
+        background-color: var(--neutral-color-0) !important;
+        overflow: hidden;
+        fieldset {
+            border-radius: 8px;
+            border: 1px solid var(--neutral-color-60);
+            border-width: 1px !important;
+            overflow: hidden;
+        }
+
+        &:hover {
+            fieldset {
+                border-color: var(--neutral-color-60) !important;
+            }
+        }
+
+        &[class*='Mui-error'] {
+            fieldset {
+                border-color: var(--error-border-color) !important;
+            }
+        }
+        &[class*='Mui-focused'] {
+            fieldset {
+                border-color: var(--focus-border-color) !important;
+            }
+        }
+        &[class*='Mui-disabled'] {
+            background-color: var(--disabled-color-background) !important;
+
+            fieldset {
+                border-color: var(--disabled-color-border) !important;
+            }
+        }
+    }
+}

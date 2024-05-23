@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Root {
+    overflow: hidden;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.Inner {
+    overflow-y: scroll;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 59px $grid-gutter * 0.5;
+    color: var(--text-color-primary);
+}
+
+@include media-breakpoint-up(md) {
+    .Inner {
+        padding: $grid-gutter * 0.5 $grid-gutter;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Root {
+        padding-bottom: $grid-gutter * 0.5;
+        &::before {
+            content: '';
+            display: block;
+            background-color: var(--neutral-color-0);
+            height: 70px;
+            width: calc(100% - $grid-gutter * 2);
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin: 0 auto $grid-gutter * 0.5;
+            border-bottom: 1px solid var(--neutral-color-50);
+        }
+    }
+
+    .Inner {
+        padding-top: initial;
+        padding-bottom: initial;
+    }
+}

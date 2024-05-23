@@ -1,0 +1,39 @@
+{
+    "title": "Détails des Compétitions",
+    "keywords": "détails des compétitions",
+    "description": "Détails des Compétitions",
+
+    "standings": {
+        "rightBoard": {
+            "title": "Classement",
+            "inputLabel": "Recherche par nom"
+        },
+        "leftBoard": {
+            "duration": {
+                "header": "Durée"
+            },
+            "tradingDays": {
+                "target": "Cible:",
+                "toGoal": "Vers un but:"
+            },
+            "dailyDrawdown": {
+                "todayEquity": "Les capitaux propres d'aujourd'hui :"
+            },
+            "totalDrawdown": {
+                "totalEquity": "Fonds propres totaux :"
+            }
+        }
+    },
+
+    "table": {
+        "headers": {
+            "id": "#",
+            "name": "Nom",
+            "account": "Compte",
+            "profit": "Profit",
+            "trailing": "Suivi Par",
+            "prize": "Prix",
+            "sharing": ""
+        }
+    }
+}

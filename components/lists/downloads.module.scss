@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Toggle {
+    width: auto;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-top: $grid-gutter * 0.25;
+    margin-bottom: $grid-gutter * 0.25;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .Label {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 0.8125rem;
+    }
+}
+
+.Message {
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+@include media-breakpoint-up(sm) {
+    .Toggle {
+        overflow: hidden;
+        width: initial;
+        display: inline-block;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Toggle {
+        margin-bottom: $grid-gutter * 0.5;
+        margin-top: 0;
+        .Label {
+            font-size: 1rem;
+        }
+    }
+}

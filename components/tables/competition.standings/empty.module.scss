@@ -1,0 +1,10 @@
+@import '../../../styles/variables';
+
+.Empty {
+    padding: 100px $grid-gutter;
+    font-size: 1rem;
+    line-height: 1.4em;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    text-align: center;
+}

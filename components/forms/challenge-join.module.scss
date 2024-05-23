@@ -1,0 +1,511 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Title {
+    font-family: Raleway;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.4em;
+    color: var(--text-color-primary);
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Summary {
+    margin-top: $grid-gutter * 0.5;
+    background-color: var(--neutral-color-0);
+    border-radius: $card-border-radius-mobile;
+    overflow: hidden;
+    padding: $grid-gutter * 0.5;
+    border: 1px solid var(--neutral-color-60);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--text-color-primary);
+
+    .Header {
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.0625rem;
+        line-height: 1.4em;
+        display: inline-block;
+        color: currentColor;
+        margin-bottom: $grid-gutter * 0.7;
+    }
+
+    .Balance {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: $grid-gutter * 0.7;
+    }
+
+    .Label {
+        text-align: left;
+        font-weight: 400;
+        font-size: 0.9375rem;
+        line-height: 2em;
+        color: var(--text-color-tertiary);
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .Value {
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.0625rem;
+        line-height: 1.4em;
+        display: inline-block;
+        color: currentColor;
+    }
+
+    .Icon {
+        margin-right: 10px;
+    }
+
+    .BalanceAmount {
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.4em;
+        color: var(--text-color-primary);
+
+        sup {
+            font-size: 0.65rem;
+            line-height: 1em;
+            font-weight: 600;
+        }
+    }
+
+    .TargetAmount {
+        font-weight: 400;
+        font-size: 1.0625rem;
+        line-height: 1.4em;
+
+        &::before {
+            content: '(+';
+        }
+        &::after {
+            content: ')';
+        }
+
+        sup {
+            font-size: 0.55rem;
+            line-height: 1em;
+            font-weight: 400;
+        }
+    }
+
+    .Attribute {
+        width: 100%;
+        margin-bottom: $grid-gutter * 0.36;
+
+        .Label {
+            width: 100px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.Coupon {
+    margin-top: $grid-gutter * 0.5;
+    background-color: var(--neutral-color-0);
+    border-radius: $card-border-radius-mobile;
+    border: 1px solid var(--neutral-color-60);
+    overflow: hidden;
+    height: 64px;
+
+    .Toggler {
+        padding-left: $grid-gutter * 0.5;
+        padding-right: $grid-gutter * 0.5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 62px;
+
+        .Label {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.4em;
+            text-align: left;
+            color: var(--text-color-secondary);
+        }
+
+        .Button {
+            position: relative;
+            right: -8px;
+            color: var(--text-color-primary);
+        }
+    }
+
+    .Collapse {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding-left: $grid-gutter * 0.5;
+        padding-right: $grid-gutter * 0.5;
+        padding-bottom: $grid-gutter * 0.5;
+
+        .Input {
+            margin-right: $grid-gutter * 0.5;
+            flex-grow: 1;
+            flex-shrink: 1;
+            & > div {
+                height: 44px;
+            }
+
+            label {
+                display: none;
+            }
+
+            input {
+                font-size: 0.9375rem;
+                padding-top: initial;
+                padding-bottom: initial;
+            }
+        }
+
+        .Button {
+            height: 44px;
+            min-width: initial;
+            padding-left: $grid-gutter * 0.5;
+            padding-right: $grid-gutter * 0.5;
+            flex-grow: 0;
+            flex-shrink: 0;
+            width: initial;
+        }
+    }
+
+    .Applied {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .Icon {
+            display: inline-block;
+            margin-right: $grid-gutter * 0.44;
+            color: var(--success-color-main);
+        }
+
+        .Text {
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.4em;
+            color: var(--text-color-primary);
+            text-align: left;
+        }
+    }
+}
+
+.Discount {
+    width: 100%;
+    margin-top: $grid-gutter * 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    .Label {
+        text-align: right;
+        padding-right: 5px;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.4em;
+        vertical-align: bottom;
+        padding-bottom: 4px;
+    }
+
+    .Value {
+        vertical-align: bottom;
+    }
+
+    .Amount {
+        font-weight: 600;
+        font-size: 1.375rem;
+        line-height: 1.4em;
+        color: var(--text-color-primary);
+
+        sup {
+            font-weight: 400;
+            line-height: 1em;
+            font-size: 0.7125rem;
+        }
+    }
+}
+
+.Total {
+    margin-top: $grid-gutter * 0.5;
+    border-top: 1px solid var(--text-color-quaternary);
+    border-bottom: 1px solid var(--text-color-quaternary);
+    padding-left: 10px;
+    padding-top: $grid-gutter * 0.42;
+    padding-bottom: $grid-gutter * 0.42;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    .Left {
+        flex-grow: 1;
+        flex-shrink: 1;
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 0.9375rem;
+        line-height: 1.4em;
+        text-align: left;
+        color: var(--text-color-primary);
+    }
+
+    .Right {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .Amount {
+        font-size: 1.6875rem;
+        font-weight: 600;
+        line-height: 1.4em;
+        text-align: right;
+        color: var(--text-color-primary);
+
+        sup {
+            font-size: 0.875rem;
+            line-height: 1em;
+        }
+    }
+}
+
+.PaymentButton {
+    margin-top: $grid-gutter * 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .Text {
+        margin-top: 5px;
+        padding-left: $grid-gutter * 0.5;
+        padding-right: $grid-gutter * 0.5;
+        text-align: center;
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.7em;
+        color: var(--text-color-primary);
+    }
+}
+
+.Payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .Link {
+        display: inline-block;
+        margin-top: $grid-gutter * 0.5;
+    }
+}
+
+.PaymentForm {
+    margin-top: $grid-gutter * 0.5;
+    background-color: var(--neutral-color-0);
+    border-radius: $card-border-radius-mobile;
+    border: 1px solid var(--neutral-color-60);
+    overflow: hidden;
+    padding: $grid-gutter * 0.25 0;
+    display: block;
+    width: 100%;
+
+    .Toggler {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: $grid-gutter * 0.5;
+        padding-right: $grid-gutter * 0.5;
+
+        label[class*='MuiFormControlLabel-root'] {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.17em;
+            color: var(--text-color-primary);
+
+            span[class*='MuiRadio-root'] {
+                color: var(--text-color-tertiary);
+                margin-right: 11px;
+                &[class*='Mui-checked'] {
+                    color: var(--text-color-primary);
+                }
+
+                svg {
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+        }
+
+        .Logos {
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+
+            span {
+                display: block;
+                height: 24px;
+                width: 24px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                margin-left: 10px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .Bitcoin {
+            background-image: url(/images/bitcoin.svg);
+        }
+
+        .Etherium {
+            background-image: url(/images/etherium.svg);
+        }
+
+        .Lightcoin {
+            background-image: url(/images/lightcoin.svg);
+        }
+
+        .Dogecoin {
+            background-image: url(/images/dogecoin.svg);
+        }
+
+        .Tether {
+            background-image: url(/images/tether.svg);
+        }
+
+        .USDCoin {
+            background-image: url(/images/usdcoin.svg);
+        }
+
+        .Visa {
+            background-image: url(/images/visa.svg);
+            width: 35px !important;
+        }
+
+        .Mastercard {
+            background-image: url(/images/mastercard.svg);
+            width: 35px !important;
+        }
+
+        .PayPal {
+            background-image: url(/images/paypal.svg);
+            width: 40px !important;
+            height: 35px !important;
+        }
+
+        &.Bordered {
+            border-top: 1px solid var(--neutral-color-50);
+        }
+    }
+
+    .PayPalSection {
+        padding-top: $grid-gutter * 0.25;
+        padding-bottom: $grid-gutter * 0.25;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .Coupon {
+        .Collapse {
+            .Button {
+                padding-left: $grid-gutter;
+                padding-right: $grid-gutter;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Summary {
+        .Header {
+            font-size: 0.9375rem;
+        }
+
+        .Icon {
+            height: 20px;
+            width: 20px;
+        }
+
+        .BalanceAmount {
+            font-size: 1.0625rem;
+        }
+
+        .Label {
+            font-size: 0.8125rem;
+            line-height: 2.3em;
+        }
+
+        .Value {
+            font-size: 0.9375rem;
+        }
+
+        .TargetAmount {
+            font-size: 0.9375rem;
+        }
+
+        .Balance {
+            width: 200px;
+        }
+
+        .Attribute {
+            .Label {
+                width: initial;
+            }
+            &:nth-child(odd) {
+                width: calc(100% - 200px);
+            }
+            &:nth-child(even) {
+                width: 200px;
+            }
+        }
+    }
+
+    .Total {
+        padding-top: $grid-gutter * 0.75;
+        padding-bottom: $grid-gutter * 0.75;
+
+        .Amount {
+            font-size: 2.125rem;
+
+            sup {
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    .PaymentButton {
+        .Text {
+            margin-top: $grid-gutter * 0.5;
+            font-size: 0.8125rem;
+            padding-left: initial;
+            padding-right: initial;
+            max-width: 220px;
+        }
+    }
+}

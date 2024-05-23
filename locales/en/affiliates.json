@@ -1,0 +1,78 @@
+{
+    "title": "Affiliates",
+    "keywords": "affiliates",
+    "description": "Traders Affiliates",
+
+    "pendingPayout": "Pending Pay:",
+
+    "filters": {
+        "times": {
+            "LIFETIME": "LIFETIME",
+            "LAST_WEEK": "LAST WEEK",
+            "LAST_MONTH": "LAST MONTH",
+            "LAST_YEAR": "LAST YEAR"
+        },
+        "types": {
+            "REFERRALS": "REFERRALS",
+            "COMMISSIONS": "COMMISSIONS",
+            "PAYOUTS": "PAYOUTS"
+        }
+    },
+
+    "table": {
+        "headers": {
+            "name": "Name",
+            "id": "#",
+            "signUpDate": "Sign Up Date",
+            "totalOrders": "Total Orders",
+            "campaign": "Campaign",
+            "commission": "Commission",
+            "status": "Status",
+            "date": "Date",
+            "amount": "Amount"
+        },
+        "noDataTableMessage": "Uh-oh, we didnt find anything!"
+    },
+
+    "affiliateLink": {
+        "title": "Affiliate Link",
+        "description1": "Start earning now by selecting a campaign and sharing your unique referral link below. Your payouts accumulate with every successful referral. Let's get sharing!",
+        "description2": "Start earning now by sharing your unique referral link below. Your payouts accumulate with every successful referral. Let's get sharing!",
+        "description3": "To join our affiliate program and start earning from referrals, please reach out to us for registration.",
+        "campaignLabels": {
+            "default": "Default",
+            "campaign_1": "Campaign 1",
+            "campaign_2": "Campaign 2",
+            "campaign_3": "Campaign 3"
+        },
+
+        "inputTextIdLabel": "Affiliate ID",
+        "inputSelectLabel": "Campaign",
+        "inputTextLinkLabel": "Link"
+    },
+
+    "btcPayout": {
+        "title": "Manage your BTC Payout Address",
+        "description": "The BTC address is required to receive commission payouts.",
+        "buttonSaveLabel": "SAVE",
+        "inputLabel": "BTC Address"
+    },
+
+    "board": {
+        "referrals": {
+            "title": "Referrals",
+            "conversionRate": "Conversion Rate:",
+            "visits": "Visits:",
+            "purchases": "Purchases:"
+        },
+        "commissions": {
+            "title": "Commissions",
+            "rate": "Rate:",
+            "sales": "Sales:",
+            "discount": "Discount:"
+        },
+        "payouts": {
+            "title": "Payouts"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "title": "Mot de Passe Oublié",
+    "keywords": "mot de passe oublié",
+    "description": "Mot de Passe Oublié",
+
+    "form": {
+        "error": "Échec de l'envoi de l'e-mail de réinitialisation du mot de passe",
+        "success": "Nous avons envoyé un courriel contenant les instructions de réinitialisation du mot de passe. Veuillez vérifier votre boîte de réception.",
+        "email": {
+            "label": "Adresse e-mail",
+            "invalid": "Veuillez vérifier que l'adresse e-mail que vous avez saisie est correcte.",
+            "required": "Veuillez saisir votre adresse e-mail."
+        }
+    },
+    "resetPassword": "Réinitialiser le mot de passe",
+    "knowYourPassword": "Vous connaissez votre mot de passe ?"
+}
